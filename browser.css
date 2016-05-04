@@ -1,0 +1,23 @@
+/* navbar */
+/* TODO: use wider values on non-OSX as they don't have the inline traffic lights */
+#react-root header .WBlUyLoP {
+	max-width: 60% !important;
+	width: 60% !important;
+}
+
+/* main */
+#react-root main .WBlUyLoP {
+	max-width: 90% !important;
+	width: 90% !important;
+}
+
+/* push the compose modal down */
+/* TODO: only needed on OS X */
+#react-root .SaRmWN__._3tixQkQf {
+	top: 40px !important;
+}
+
+/* push the login navbar down */
+.ResponsiveLayout {
+	padding-top: 40px !important;
+}
