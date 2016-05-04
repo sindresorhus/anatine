@@ -57,6 +57,7 @@ Built with [Electron](http://electron.atom.io).
 
 ## Related
 
+- [Refined Twitter](https://github.com/sindresorhus/refined-twitter) - Chrome extension of this
 - [Caprine](https://github.com/sindresorhus/caprine) - Facebook Messenger app
 
 
