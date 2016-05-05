@@ -46,6 +46,17 @@ Icon=/full/path/to/folder/Anatine/resources/app/media/Icon.png
 [**Download**](https://github.com/sindresorhus/anatine/releases/latest) and unzip to some location.
 
 
+## Keyboard shortcuts
+
+- New Tweet: <kbd>n</kbd> *(Doesn't currently work because of an [Electron bug](https://github.com/electron/electron/issues/5398))*
+- Go to Home: <kbd>g</kbd> <kbd>h</kbd>
+- Go to Notifications: <kbd>g</kbd> <kbd>n</kbd>
+- Go to Messages: <kbd>g</kbd> <kbd>m</kbd>
+- Go to Search: <kbd>/</kbd>
+- Go to Profile: <kbd>g</kbd> <kbd>p</kbd>
+- Go to Likes: <kbd>g</kbd> <kbd>l</kbd>
+
+
 ## Dev
 
 Built with [Electron](http://electron.atom.io).

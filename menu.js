@@ -6,14 +6,14 @@ const BrowserWindow = electron.BrowserWindow;
 const shell = electron.shell;
 const appName = app.getName();
 
-function sendAction(action) {
+function sendAction(action, data) {
 	const win = BrowserWindow.getAllWindows()[0];
 
 	if (process.platform === 'darwin') {
 		win.restore();
 	}
 
-	win.webContents.send(action);
+	win.webContents.send(action, data);
 }
 
 const viewSubmenu = [
@@ -36,6 +36,51 @@ const viewSubmenu = [
 		accelerator: 'CmdOrCtrl+-',
 		click() {
 			sendAction('zoom-out');
+		}
+	}
+];
+
+const goSubmenu = [
+	{
+		label: 'Home',
+		accelerator: 'G+H',
+		click() {
+			sendAction('go', 'home');
+		}
+	},
+	{
+		label: 'Notifications',
+		accelerator: 'G+N',
+		click() {
+			sendAction('go', 'notifications');
+		}
+	},
+	{
+		label: 'Messages',
+		accelerator: 'G+M',
+		click() {
+			sendAction('go', 'messages');
+		}
+	},
+	{
+		label: 'Search',
+		accelerator: '/',
+		click() {
+			sendAction('go', 'search');
+		}
+	},
+	{
+		label: 'Profile',
+		accelerator: 'G+P',
+		click() {
+			sendAction('go', 'profile');
+		}
+	},
+	{
+		label: 'Likes',
+		accelerator: 'G+L',
+		click() {
+			sendAction('go', 'likes');
 		}
 	}
 ];
@@ -122,10 +167,10 @@ const darwinTpl = [
 		label: 'File',
 		submenu: [
 			{
-				label: 'Compose Tweet',
-				accelerator: 'CmdOrCtrl+N',
+				label: 'New Tweet',
+				accelerator: 'N',
 				click() {
-					sendAction('compose-tweet');
+					sendAction('new-tweet');
 				}
 			}
 		]
@@ -167,6 +212,10 @@ const darwinTpl = [
 				role: 'selectall'
 			}
 		]
+	},
+	{
+		label: 'Go',
+		submenu: goSubmenu
 	},
 	{
 		label: 'View',
@@ -217,10 +266,10 @@ const linuxTpl = [
 		label: 'File',
 		submenu: [
 			{
-				label: 'Compose Tweet',
-				accelerator: 'CmdOrCtrl+N',
+				label: 'New Tweet',
+				accelerator: 'N',
 				click() {
-					sendAction('compose-tweet');
+					sendAction('new-tweet');
 				}
 			},
 			{
@@ -259,6 +308,10 @@ const linuxTpl = [
 				role: 'paste'
 			}
 		]
+	},
+	{
+		label: 'Go',
+		submenu: goSubmenu
 	},
 	{
 		label: 'View',

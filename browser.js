@@ -2,9 +2,43 @@
 const electron = require('electron');
 const ipc = electron.ipcRenderer;
 const storage = electron.remote.require('./storage');
+const $ = document.querySelector.bind(document);
+// const $$ = document.querySelectorAll.bind(document);
 
-ipc.on('compose-tweet', () => {
-	document.querySelector('a[href$="/compose/tweet"]').click();
+let username;
+
+function init() {
+	// hide navbar profile link
+	$('header a[href$="/account"]').parentNode.style.display = 'none';
+
+	const state = JSON.parse($('.___iso-state___').dataset.state).initialState;
+	username = state.settings.data.screen_name;
+}
+
+ipc.on('go', (e, path) => {
+	const el = document.activeElement;
+
+	if (el && (el.tagName.toLowerCase() === 'input' ||
+		el.tagName.toLowerCase() === 'textarea')) {
+		return;
+	}
+
+	if (path === 'profile') {
+		path = username;
+		$('a[href$="/account"]').click();
+	}
+
+	if (path === 'likes') {
+		path = `${username}/likes`;
+		$('a[href$="/account"]').click();
+		$(`a[href$="/${username}"]`).click();
+	}
+
+	$(`a[href$="/${path}"]`).click();
+});
+
+ipc.on('new-tweet', () => {
+	$('a[href$="/compose/tweet"]').click();
 });
 
 ipc.on('log-out', () => {
@@ -32,7 +66,7 @@ ipc.on('zoom-out', () => {
 });
 
 function setZoom(zoomFactor) {
-	const node = document.getElementById('zoomFactor');
+	const node = $('#zoomFactor');
 	node.textContent = `body {zoom: ${zoomFactor} !important}`;
 	storage.set('zoomFactor', zoomFactor);
 }
@@ -51,9 +85,6 @@ function zoomInit() {
 document.addEventListener('DOMContentLoaded', () => {
 	zoomInit();
 
-	// hide navbar profile link
 	// TODO: figure out a better way to detect when React is done
-	setTimeout(() => {
-		document.querySelector('header a[href$="/account"]').parentNode.style.display = 'none';
-	}, 200);
+	setTimeout(init, 200);
 });
