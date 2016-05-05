@@ -78,7 +78,7 @@ function registerShortcuts(username) {
 		}
 	});
 
-	Mousetrap.bindGlobal('backspace', () => {
+	Mousetrap.bind('backspace', () => {
 		window.history.back();
 	});
 }
