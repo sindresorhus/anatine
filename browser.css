@@ -21,3 +21,8 @@
 .ResponsiveLayout {
 	padding-top: 40px !important;
 }
+
+/* bird overlaps with the login navbar */
+img.larrybird {
+	padding-left: 80px !important;
+}
