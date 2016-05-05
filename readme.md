@@ -48,9 +48,8 @@ Icon=/full/path/to/folder/Anatine/resources/app/media/Icon.png
 
 ## Keyboard shortcuts
 
-- New tweet: <kbd>n</kbd>
-- Post tweet: <kbd>Cmd/Ctrl</kbd> <kbd>Enter</kbd>
-- Send DM: <kbd>Cmd/Ctrl</kbd> <kbd>Enter</kbd>
+- New tweet/DM: <kbd>n</kbd>
+- Send tweet/DM: <kbd>Cmd/Ctrl</kbd> <kbd>Enter</kbd>
 - Go to Home: <kbd>g</kbd> <kbd>h</kbd>
 - Go to Notifications: <kbd>g</kbd> <kbd>n</kbd>
 - Go to Messages: <kbd>g</kbd> <kbd>m</kbd>

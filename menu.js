@@ -126,23 +126,6 @@ const darwinTpl = [
 				click() {
 					sendAction('new-tweet');
 				}
-			},
-			{
-				type: 'separator'
-			},
-			{
-				label: 'Next Tab',
-				accelerator: 'Ctrl+Tab',
-				click() {
-					sendAction('next-tab');
-				}
-			},
-			{
-				label: 'Previous Tab',
-				accelerator: 'Ctrl+Shift+Tab',
-				click() {
-					sendAction('previous-tab');
-				}
 			}
 		]
 	},
@@ -253,6 +236,23 @@ const linuxTpl = [
 				label: 'New Tweet',
 				click() {
 					sendAction('new-tweet');
+				}
+			},
+			{
+				type: 'separator'
+			},
+			{
+				label: 'Next Tab',
+				accelerator: 'Ctrl+Tab',
+				click() {
+					sendAction('next-tab');
+				}
+			},
+			{
+				label: 'Previous Tab',
+				accelerator: 'Ctrl+Shift+Tab',
+				click() {
+					sendAction('previous-tab');
 				}
 			},
 			{

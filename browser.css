@@ -41,3 +41,9 @@ img.larrybird {
 #react-root ._3zdG1IkJ {
 	height: 1.7rem !important;
 }
+
+/* push the modal close button for DM's to the right so it's not covered by the OS X traffic lights */
+/* TODO: only needed on OS X */
+#react-root main button[aria-label="Close"] {
+	margin-left: 50px !important;
+}

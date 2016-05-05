@@ -52,7 +52,11 @@ ipc.on('previous-tab', () => {
 
 function registerShortcuts(username) {
 	Mousetrap.bind('n', () => {
-		$('a[href$="/compose/tweet"]').click();
+		if (window.location.pathname.split('/')[1] === 'messages') {
+			$('a[href$="/messages/compose"]').click();
+		} else {
+			$('a[href$="/compose/tweet"]').click();
+		}
 
 		return false;
 	});
@@ -87,8 +91,10 @@ function registerShortcuts(username) {
 	});
 
 	Mousetrap.bindGlobal('esc', () => {
-		if (window.location.pathname === '/compose/tweet') {
-			$('button[aria-label="Close"]').click();
+		const closeBtn = $('button[aria-label="Close"]');
+
+		if (closeBtn) {
+			closeBtn.click();
 		}
 	});
 
@@ -177,5 +183,5 @@ document.addEventListener('DOMContentLoaded', () => {
 	zoomInit();
 
 	// TODO: figure out a better way to detect when React is done
-	setTimeout(init, 200);
+	setTimeout(init, 300);
 });
