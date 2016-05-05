@@ -57,6 +57,7 @@ Icon=/full/path/to/folder/Anatine/resources/app/media/Icon.png
 - Go to Search: <kbd>/</kbd>
 - Go to Profile: <kbd>g</kbd> <kbd>p</kbd>
 - Go to Likes: <kbd>g</kbd> <kbd>l</kbd>
+- Go to previous page: <kbd>Delete</kbd> or <kbd>Backspace</kbd>
 
 
 ## Dev
