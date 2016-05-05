@@ -16,6 +16,12 @@
 
 ### OS X
 
+#### [Homebrew Cask](http://caskroom.io)
+
+```
+$ brew update && brew cask install caprine
+```
+
 #### Manually
 
 [**Download**](https://github.com/sindresorhus/anatine/releases/latest), unzip, and move `Anatine.app` to the `/Applications` directory.
