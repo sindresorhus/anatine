@@ -48,8 +48,8 @@ Icon=/full/path/to/folder/Anatine/resources/app/media/Icon.png
 
 ## Keyboard shortcuts
 
-- New Tweet: <kbd>n</kbd>
-- Post Tweet: <kbd>Cmd/Ctrl</kbd> <kbd>Enter</kbd>
+- New tweet: <kbd>n</kbd>
+- Post tweet: <kbd>Cmd/Ctrl</kbd> <kbd>Enter</kbd>
 - Send DM: <kbd>Cmd/Ctrl</kbd> <kbd>Enter</kbd>
 - Go to Home: <kbd>g</kbd> <kbd>h</kbd>
 - Go to Notifications: <kbd>g</kbd> <kbd>n</kbd>
@@ -58,6 +58,8 @@ Icon=/full/path/to/folder/Anatine/resources/app/media/Icon.png
 - Go to Profile: <kbd>g</kbd> <kbd>p</kbd>
 - Go to Likes: <kbd>g</kbd> <kbd>l</kbd>
 - Go to previous page: <kbd>Delete</kbd> or <kbd>Backspace</kbd>
+- Next tab: <kbd>Ctrl</kbd> <kbd>Tab</kbd>
+- Previous tab: <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>Tab</kbd>
 
 
 ## Dev

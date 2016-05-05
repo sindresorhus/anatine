@@ -27,6 +27,29 @@ const storage = remote.require('./storage');
 const $ = document.querySelector.bind(document);
 // const $$ = document.querySelectorAll.bind(document);
 
+function changeTab(next) {
+	const pages = [
+		'/home',
+		'/notifications',
+		'/messages',
+		'/search'
+	];
+
+	// TODO: these lines can probably be simplified, but I can't think right now
+	const index = pages.indexOf(window.location.pathname) + (next ? 1 : -1);
+	const ret = (index % pages.length + pages.length) % pages.length;
+
+	$(`a[href$="${pages[ret]}"]`).click();
+}
+
+ipc.on('next-tab', () => {
+	changeTab(true);
+});
+
+ipc.on('previous-tab', () => {
+	changeTab(false);
+});
+
 function registerShortcuts(username) {
 	Mousetrap.bind('n', () => {
 		$('a[href$="/compose/tweet"]').click();

@@ -126,6 +126,23 @@ const darwinTpl = [
 				click() {
 					sendAction('new-tweet');
 				}
+			},
+			{
+				type: 'separator'
+			},
+			{
+				label: 'Next Tab',
+				accelerator: 'Ctrl+Tab',
+				click() {
+					sendAction('next-tab');
+				}
+			},
+			{
+				label: 'Previous Tab',
+				accelerator: 'Ctrl+Shift+Tab',
+				click() {
+					sendAction('previous-tab');
+				}
 			}
 		]
 	},
@@ -184,6 +201,23 @@ const darwinTpl = [
 				label: 'Close',
 				accelerator: 'CmdOrCtrl+W',
 				role: 'close'
+			},
+			{
+				type: 'separator'
+			},
+			{
+				label: 'Next Tab',
+				accelerator: 'Ctrl+Tab',
+				click() {
+					sendAction('next-tab');
+				}
+			},
+			{
+				label: 'Previous Tab',
+				accelerator: 'Ctrl+Shift+Tab',
+				click() {
+					sendAction('previous-tab');
+				}
 			},
 			{
 				type: 'separator'
