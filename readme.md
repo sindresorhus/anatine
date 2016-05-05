@@ -5,7 +5,7 @@
 <br>
 <div align="center">
 	<a href="https://github.com/sindresorhus/anatine/releases/latest" align="center">
-		<img src="media/screenshot.png" width="629">
+		<img src="media/screenshot.png" width="617">
 	</a>
 </div>
 
