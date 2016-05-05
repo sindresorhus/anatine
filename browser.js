@@ -77,6 +77,10 @@ function registerShortcuts(username) {
 			$('button[data-testid="dmComposerSendButton"]').click();
 		}
 	});
+
+	Mousetrap.bindGlobal('backspace', () => {
+		window.history.back();
+	});
 }
 
 function init() {
