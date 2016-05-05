@@ -40,51 +40,6 @@ const viewSubmenu = [
 	}
 ];
 
-const goSubmenu = [
-	{
-		label: 'Home',
-		accelerator: 'G+H',
-		click() {
-			sendAction('go', 'home');
-		}
-	},
-	{
-		label: 'Notifications',
-		accelerator: 'G+N',
-		click() {
-			sendAction('go', 'notifications');
-		}
-	},
-	{
-		label: 'Messages',
-		accelerator: 'G+M',
-		click() {
-			sendAction('go', 'messages');
-		}
-	},
-	{
-		label: 'Search',
-		accelerator: '/',
-		click() {
-			sendAction('go', 'search');
-		}
-	},
-	{
-		label: 'Profile',
-		accelerator: 'G+P',
-		click() {
-			sendAction('go', 'profile');
-		}
-	},
-	{
-		label: 'Likes',
-		accelerator: 'G+L',
-		click() {
-			sendAction('go', 'likes');
-		}
-	}
-];
-
 const helpSubmenu = [
 	{
 		label: `${appName} Website...`,
@@ -168,7 +123,6 @@ const darwinTpl = [
 		submenu: [
 			{
 				label: 'New Tweet',
-				accelerator: 'N',
 				click() {
 					sendAction('new-tweet');
 				}
@@ -212,10 +166,6 @@ const darwinTpl = [
 				role: 'selectall'
 			}
 		]
-	},
-	{
-		label: 'Go',
-		submenu: goSubmenu
 	},
 	{
 		label: 'View',
@@ -267,7 +217,6 @@ const linuxTpl = [
 		submenu: [
 			{
 				label: 'New Tweet',
-				accelerator: 'N',
 				click() {
 					sendAction('new-tweet');
 				}
@@ -308,10 +257,6 @@ const linuxTpl = [
 				role: 'paste'
 			}
 		]
-	},
-	{
-		label: 'Go',
-		submenu: goSubmenu
 	},
 	{
 		label: 'View',

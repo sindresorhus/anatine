@@ -48,13 +48,15 @@ Icon=/full/path/to/folder/Anatine/resources/app/media/Icon.png
 
 ## Keyboard shortcuts
 
-- New Tweet: <kbd>n</kbd> *(Doesn't currently work because of an [Electron bug](https://github.com/electron/electron/issues/5398))*
-- Go to Home: <kbd>g</kbd> <kbd>h</kbd>
-- Go to Notifications: <kbd>g</kbd> <kbd>n</kbd>
-- Go to Messages: <kbd>g</kbd> <kbd>m</kbd>
+- New Tweet: <kbd>n</kbd>
+- Post Tweet: <kbd>Cmd/Ctrl</kbd> <kbd>Enter</kbd>
+- Send DM: <kbd>Cmd/Ctrl</kbd> <kbd>Enter</kbd>
+- Go to Home: <kbd>g</kbd> <kbd>h</kbd>
+- Go to Notifications: <kbd>g</kbd> <kbd>n</kbd>
+- Go to Messages: <kbd>g</kbd> <kbd>m</kbd>
 - Go to Search: <kbd>/</kbd>
-- Go to Profile: <kbd>g</kbd> <kbd>p</kbd>
-- Go to Likes: <kbd>g</kbd> <kbd>l</kbd>
+- Go to Profile: <kbd>g</kbd> <kbd>p</kbd>
+- Go to Likes: <kbd>g</kbd> <kbd>l</kbd>
 
 
 ## Dev
