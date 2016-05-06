@@ -25,6 +25,7 @@ const remote = electron.remote;
 const path = remote.require('path');
 const storage = remote.require('./storage');
 const $ = document.querySelector.bind(document);
+const scrollStep = 50;
 // const $$ = document.querySelectorAll.bind(document);
 
 function changeTab(next) {
@@ -49,6 +50,10 @@ ipc.on('next-tab', () => {
 ipc.on('previous-tab', () => {
 	changeTab(false);
 });
+
+function fromScrollTop(n) {
+	return document.body.scrollTop + n;
+}
 
 function registerShortcuts(username) {
 	Mousetrap.bind('n', () => {
@@ -77,6 +82,31 @@ function registerShortcuts(username) {
 		$('a[href$="/search"]').click();
 
 		return false;
+	});
+
+	// vim bindings
+	Mousetrap.bind('j', () => {
+		window.scrollTo(0, fromScrollTop(scrollStep));
+	});
+
+	Mousetrap.bind('k', () => {
+		window.scrollTo(0, fromScrollTop((scrollStep * -1)));
+	});
+
+	Mousetrap.bind('g g', () => {
+		window.scrollTo(0, 0);
+	});
+
+	Mousetrap.bind('ctrl+d', () => {
+		window.scrollTo(0, fromScrollTop(window.innerHeight * 0.9));
+	});
+
+	Mousetrap.bind('ctrl+u', () => {
+		window.scrollTo(0, fromScrollTop(window.innerHeight * -0.9));
+	});
+
+	Mousetrap.bind('G', () => {
+		window.scrollTo(0, document.body.scrollHeight);
 	});
 
 	Mousetrap.bind('g p', () => {
