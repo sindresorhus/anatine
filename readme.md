@@ -19,7 +19,7 @@
 #### [Homebrew Cask](http://caskroom.io)
 
 ```
-$ brew update && brew cask install anatine
+$ brew update && brew tap caskroom/cask && brew cask install anatine
 ```
 
 #### Manually
