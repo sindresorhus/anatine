@@ -55,6 +55,10 @@ function fromScrollTop(n) {
 	return document.body.scrollTop + n;
 }
 
+function scrollToY(y) {
+	return window.scrollTo(0, y);
+}
+
 function registerShortcuts(username) {
 	Mousetrap.bind('n', () => {
 		if (window.location.pathname.split('/')[1] === 'messages') {
@@ -86,27 +90,27 @@ function registerShortcuts(username) {
 
 	// vim bindings
 	Mousetrap.bind('j', () => {
-		window.scrollTo(0, fromScrollTop(scrollStep));
+		scrollToY(fromScrollTop(scrollStep));
 	});
 
 	Mousetrap.bind('k', () => {
-		window.scrollTo(0, fromScrollTop((scrollStep * -1)));
+		scrollToY(fromScrollTop(scrollStep * -1));
 	});
 
 	Mousetrap.bind('g g', () => {
-		window.scrollTo(0, 0);
+		scrollToY(0);
 	});
 
 	Mousetrap.bind('ctrl+d', () => {
-		window.scrollTo(0, fromScrollTop(window.innerHeight * 0.9));
+		scrollToY(fromScrollTop(window.innerHeight * 0.9));
 	});
 
 	Mousetrap.bind('ctrl+u', () => {
-		window.scrollTo(0, fromScrollTop(window.innerHeight * -0.9));
+		scrollToY(fromScrollTop(window.innerHeight * -0.9));
 	});
 
 	Mousetrap.bind('G', () => {
-		window.scrollTo(0, document.body.scrollHeight);
+		scrollToY(document.body.scrollHeight);
 	});
 
 	Mousetrap.bind('g p', () => {
