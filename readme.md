@@ -49,7 +49,7 @@ Icon=/full/path/to/folder/Anatine/resources/app/media/Icon.png
 ## Keyboard shortcuts
 
 - New tweet/DM: <kbd>n</kbd>
-- Send tweet/DM: <kbd>Cmd/Ctrl</kbd> <kbd>Enter</kbd>
+- Send tweet/DM: <kbd>Cmd</kbd> <kbd>Enter</kbd> or <kbd>Ctrl</kbd> <kbd>Enter</kbd>
 - Go to Home: <kbd>g</kbd> <kbd>h</kbd>
 - Go to Notifications: <kbd>g</kbd> <kbd>n</kbd>
 - Go to Messages: <kbd>g</kbd> <kbd>m</kbd>
@@ -78,7 +78,7 @@ Built with [Electron](http://electron.atom.io).
 
 ## Related
 
-- [Refined Twitter](https://github.com/sindresorhus/refined-twitter) - Chrome extension of this
+- [Refined Twitter](https://github.com/sindresorhus/refined-twitter) - Chrome extension of this app
 - [Caprine](https://github.com/sindresorhus/caprine) - Facebook Messenger app
 
 
