@@ -47,3 +47,9 @@ img.larrybird {
 #react-root main button[aria-label="Close"] {
 	margin-left: 50px !important;
 }
+
+/* push the image close button down so it's not covered by the OS X traffic lights */
+/* TODO: only needed on OS X */
+#react-root ._246HcQqT {
+	margin-top: 30px !important;
+}
