@@ -59,8 +59,8 @@ Icon=/full/path/to/folder/Anatine/resources/app/media/Icon.png
 - Go to previous page: <kbd>Delete</kbd> or <kbd>Backspace</kbd>
 - Next tab: <kbd>Ctrl</kbd> <kbd>Tab</kbd>
 - Previous tab: <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>Tab</kbd>
-- Scroll up: <kbd>k</kbd>
-- Scroll down: <kbd>j</kbd>
+- Go to next tweet: <kbd>j</kbd>
+- Go to previous tweet: <kbd>k</kbd>
 - Page down: <kbd>Ctrl</kbd> <kbd>d</kbd>
 - Page up: <kbd>Ctrl</kbd> <kbd>u</kbd>
 - Scroll to top: <kbd>g</kbd> <kbd>g</kbd>
