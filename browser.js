@@ -25,8 +25,10 @@ const remote = electron.remote;
 const path = remote.require('path');
 const storage = remote.require('./storage');
 const $ = document.querySelector.bind(document);
-const scrollStep = 50;
 // const $$ = document.querySelectorAll.bind(document);
+
+const scrollStep = 50;
+const pageScrollPctHeight = 0.9;
 
 function changeTab(next) {
 	const pages = [
@@ -102,11 +104,11 @@ function registerShortcuts(username) {
 	});
 
 	Mousetrap.bind('ctrl+d', () => {
-		scrollToY(fromScrollTop(window.innerHeight * 0.9));
+		scrollToY(fromScrollTop(window.innerHeight * pageScrollPctHeight));
 	});
 
 	Mousetrap.bind('ctrl+u', () => {
-		scrollToY(fromScrollTop(window.innerHeight * -0.9));
+		scrollToY(fromScrollTop(window.innerHeight * -pageScrollPctHeight));
 	});
 
 	Mousetrap.bind('G', () => {
