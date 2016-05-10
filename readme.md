@@ -1,4 +1,4 @@
-# <img src="media/Icon.png" width="45" align="left">Anatine
+# <img src="static/Icon.png" width="45" align="left">Anatine
 
 > Pristine Twitter app
 
@@ -39,7 +39,7 @@ Name=Anatine
 Exec=/full/path/to/folder/Anatine
 Terminal=false
 Type=Application
-Icon=/full/path/to/folder/Anatine/resources/app/media/Icon.png
+Icon=/full/path/to/folder/Anatine/resources/app/static/Icon.png
 ```
 
 ### Windows

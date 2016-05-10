@@ -75,7 +75,8 @@ if (process.platform !== 'darwin') {
 				title: `About ${appName}`,
 				message: `${appName} ${app.getVersion()}`,
 				detail: 'Created by Sindre Sorhus',
-				icon: path.join(__dirname, 'media', process.platform === 'linux' ? 'Icon-linux-about.png' : 'Icon.png'),
+				// because of https://github.com/electron/electron/issues/5465
+				icon: path.join(__dirname, 'static', process.platform === 'linux' ? 'Icon-linux-about.png' : 'Icon.png'),
 				buttons: []
 			});
 		}
