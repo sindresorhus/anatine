@@ -171,10 +171,10 @@ function registerShortcuts(username) {
 	});
 
 	Mousetrap.bindGlobal('esc', () => {
-		const closeBtn = $('button[aria-label="Close"]');
+		const btn = $('button._158OzO7l');
 
-		if (closeBtn) {
-			closeBtn.click();
+		if (btn) {
+			btn.click();
 		}
 	});
 
