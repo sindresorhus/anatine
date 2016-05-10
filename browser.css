@@ -1,3 +1,9 @@
+/* force a scrollbar on Linux and Windows to prevent jumping when changing tabs */
+body.os-linux,
+body.os-win32 {
+	overflow-y: scroll !important;
+}
+
 /* navbar */
 /* TODO: use wider values on non-OSX as they don't have the inline traffic lights */
 #react-root header .WBlUyLoP {
