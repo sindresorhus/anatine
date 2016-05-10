@@ -10,6 +10,7 @@
 </div>
 
 
+
 ## Install
 
 *OS X 10.9+, Windows 7+ & Linux are supported.*
@@ -46,7 +47,13 @@ Icon=/full/path/to/folder/Anatine/resources/app/media/Icon.png
 [**Download**](https://github.com/sindresorhus/anatine/releases/latest) and unzip to some location.
 
 
-## Keyboard shortcuts
+## Features
+
+### Background behavior
+
+When closing the window, the app will continue running in the background, in the dock on OS X and the tray on Linux/Windows. Right-click the dock/tray icon and choose `Quit` to completely quit the app. On OS X, click the dock icon to show the window. On Linux, right-click the tray icon and choose `Toggle` to toggle the window. On Windows, click the tray icon to toggle the window.
+
+### Keyboard shortcuts
 
 - New tweet/DM: <kbd>n</kbd>
 - Send tweet/DM: <kbd>Cmd</kbd> <kbd>Enter</kbd> or <kbd>Ctrl</kbd> <kbd>Enter</kbd>
@@ -79,7 +86,6 @@ Built with [Electron](http://electron.atom.io).
 - Build Linux: `$ npm run build:linux`
 - Build Windows: `$ npm run build:windows`
 - Build all: `$ brew install wine` and `$ npm run build` *(OS X only)*
-
 
 
 ## Related
