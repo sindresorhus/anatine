@@ -67,6 +67,10 @@ function createMainWindow() {
 		}
 	});
 
+	win.on('page-title-updated', e => {
+		e.preventDefault();
+	});
+
 	return win;
 }
 
