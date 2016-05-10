@@ -77,8 +77,6 @@ const storage = remote.require('./storage');
 const $ = document.querySelector.bind(document);
 // const $$ = document.querySelectorAll.bind(document);
 
-const pageScrollPctHeight = 0.9;
-
 function changeTab(next) {
 	const pages = [
 		'/home',
@@ -101,14 +99,6 @@ ipc.on('next-tab', () => {
 ipc.on('previous-tab', () => {
 	changeTab(false);
 });
-
-function fromScrollTop(n) {
-	return document.body.scrollTop + n;
-}
-
-function scrollToY(y) {
-	return window.scrollTo(0, y);
-}
 
 function registerShortcuts(username) {
 	Mousetrap.bind('n', () => {
@@ -137,26 +127,6 @@ function registerShortcuts(username) {
 		$('a[href$="/search"]').click();
 
 		return false;
-	});
-
-	// vim bindings
-	Mousetrap.bind('j', scrollToTweet);
-	Mousetrap.bind('k', scrollToTweet);
-
-	Mousetrap.bind('g g', () => {
-		scrollToY(0);
-	});
-
-	Mousetrap.bind('ctrl+d', () => {
-		scrollToY(fromScrollTop(window.innerHeight * pageScrollPctHeight));
-	});
-
-	Mousetrap.bind('ctrl+u', () => {
-		scrollToY(fromScrollTop(window.innerHeight * -pageScrollPctHeight));
-	});
-
-	Mousetrap.bind('G', () => {
-		scrollToY(document.body.scrollHeight);
 	});
 
 	Mousetrap.bind('g p', () => {
@@ -191,6 +161,31 @@ function registerShortcuts(username) {
 	Mousetrap.bind('backspace', () => {
 		window.history.back();
 	});
+
+	// vim bindings
+	const pageScrollPctHeight = 0.9;
+	const fromScrollTop = n => document.body.scrollTop + n;
+	const scrollToY = y => window.scrollTo(0, y);
+
+	Mousetrap.bind('j', scrollToTweet);
+	Mousetrap.bind('k', scrollToTweet);
+
+	Mousetrap.bind('g g', () => {
+		scrollToY(0);
+	});
+
+	Mousetrap.bind('ctrl+d', () => {
+		scrollToY(fromScrollTop(window.innerHeight * pageScrollPctHeight));
+	});
+
+	Mousetrap.bind('ctrl+u', () => {
+		scrollToY(fromScrollTop(window.innerHeight * -pageScrollPctHeight));
+	});
+
+	Mousetrap.bind('G', () => {
+		scrollToY(document.body.scrollHeight);
+	});
+	// -- //
 }
 
 function init() {
