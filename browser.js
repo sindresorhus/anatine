@@ -37,8 +37,10 @@ const scrollToTweet = event => { // eslint-disable-line
 	// this padding has to be applied to factor in the padding that's added to the container
 	const tweetsContainerPadding = Math.ceil(parseInt($('._1nQuzuNK').style.paddingTop.replace('px', ''), 10));
 
+	const offsetToNotShowTweetTopBorder = 2;
+
 	// shortcut for getting the total offset from the top of the document of a particular tweet
-	const totalOffset = tweetOffset => tweetOffset + calculatedNavHeight + tweetsContainerPadding;
+	const totalOffset = tweetOffset => tweetOffset + calculatedNavHeight + tweetsContainerPadding + offsetToNotShowTweetTopBorder;
 
 	// takes a tweet's offsetTop and checks if it's below the navigation bar
 	const tweetIsBelowNav = offset => totalOffset(offset) > currentTop + bufferTop;
