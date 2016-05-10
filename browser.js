@@ -26,17 +26,19 @@ Updates should happen there first.
 */
 const scrollToTweet = event => { // eslint-disable-line
 	const $ = document.querySelector.bind(document);
-	const navHeight = $('nav').clientHeight;
 	const tweets = document.querySelectorAll('._222QxFjc[role="row"]');
 	const currentTop = window.scrollY;
 	const bufferTop = 5; // added because somtimes the scrolling is off by a few px
 	const keyCode = event.charCode; // TODO: replace with key when Chrome 51 is out https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key
 
+	// calculate the height of the navigation/header to use for scrolling
+	const calculatedNavHeight = $('header').clientHeight + ($('header').clientHeight - $('nav').clientHeight);
+
 	// this padding has to be applied to factor in the padding that's added to the container
 	const tweetsContainerPadding = Math.ceil(parseInt($('._1nQuzuNK').style.paddingTop.replace('px', ''), 10));
 
 	// shortcut for getting the total offset from the top of the document of a particular tweet
-	const totalOffset = tweetOffset => tweetOffset + navHeight + tweetsContainerPadding;
+	const totalOffset = tweetOffset => tweetOffset + calculatedNavHeight + tweetsContainerPadding;
 
 	// takes a tweet's offsetTop and checks if it's below the navigation bar
 	const tweetIsBelowNav = offset => totalOffset(offset) > currentTop + bufferTop;
