@@ -194,7 +194,7 @@ function registerShortcuts(username) {
 }
 
 function setDarkMode() {
-	document.documentElement.classList.toggle('darkMode', storage.get('darkMode'));
+	document.documentElement.classList.toggle('dark-mode', storage.get('darkMode'));
 }
 
 function toggleDarkMode() {
