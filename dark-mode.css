@@ -15,10 +15,17 @@ html.dark-mode ._1R-qbptt {
 	background: #192633 !important;
 }
 
+/* search lists */
+html.dark-mode ._10lTeTjh {
+	background: #2f3b47 !important;
+}
+
 /* navbar border */
 html.dark-mode ._3vk57kRX,
 /* input box border */
 html.dark-mode ._2qaFoaOS,
+/* compose tweet border */
+html.dark-mode ._-99S9zHC,
 /* suggested people */
 html.dark-mode ._3npsCUvN,
 /* spacer border top */
@@ -26,37 +33,55 @@ html.dark-mode ._2-x3RLq2,
 /* retweet count borders */
 html.dark-mode ._1N8xRqVj,
 html.dark-mode ._3h5wA3M_,
+/* heading border */
+html.dark-mode ._3FIA3A1x,
+/* DM message border */
+html.dark-mode ._2ACoFZzr,
+/* DM compuse top border */
+html.dark-mode ._3so04aC4,
 /* element seperators */
+html.dark-mode ._2LwEUgbO,
+html.dark-mode ._3tixQkQf,
+html.dark-mode .KpW0EccK,
 html.dark-mode .c2-JCY2V ._222QxFjc ._1BmZ-Yeo {
-	border-color: rgba(255, 255, 255, 0.1);
+	border-color: rgba(255, 255, 255, 0.1) !important;
 }
 
 /* base font colour */
 html.dark-mode,
 html.dark-mode nav,
-html.dark-mode ._2qaFoaOS,
-html.dark-mode .a--MP-qD,
-html.dark-mode .a--MP-qD:active,
-html.dark-mode .a--MP-qD:focus,
-html.dark-mode .a--MP-qD:hover {
-	color: rgba(255, 255, 255, 0.4);
-}
-
-/* follow button */
-html.dark-mode ._2f-qOhRh {
-	background: transparent;
-}
-
-/* Who to follow heading */
-html.dark-mode ._2LwEUgbO {
-	border-color: rgba(255, 255, 255, 0.1);
+/* embedded media title */
+html.dark-mode ._3yLY5rI9,
+/* retweeted tweet body */
+html.dark-mode ._3EzK97M9 > span {
+	color: rgba(255, 255, 255, 0.75);
 }
 
 /* user "real name" */
 html.dark-mode ._38kXZCmY,
 /* follower counts */
 html.dark-mode ._3YZtKRZQ {
-	color: rgba(255, 255, 255, 0.7);
+	color: rgba(255, 255, 255, 0.9);
+}
+
+/* Heading text */
+html.dark-mode ._2qaFoaOS,
+html.dark-mode h1,
+html.dark-mode h2,
+/* input text */
+html.dark-mode textarea {
+	color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* buttons */
+html.dark-mode ._2f-qOhRh {
+	background: transparent;
+	color: rgb(255, 255, 255) !important;
+}
+
+/* reply markers */
+html.dark-mode ._1jtqWh_6 {
+	background-color: rgba(255, 255, 255, 0.4) !important;
 }
 
 /* embedded media border colour */
@@ -64,11 +89,6 @@ html.dark-mode ._1K1FePxK,
 html.dark-mode .zLkZvTFz,
 html.dark-mode ._1unhGaVg {
 	border-color: rgba(255, 255, 255, 0.1);
-}
-
-/* embedded media title */
-html.dark-mode ._3yLY5rI9 {
-	color: #B7D1E4;
 }
 
 /* poll colour */
@@ -87,6 +107,16 @@ html.dark-mode ._3gsfT3lC .JFlBIqN4,
 html.dark-mode .JFlBIqN4 {
 	background: rgba(255, 255, 255, 0.1) !important;
 	color: rgba(255, 255, 255, 0.9);
+}
+
+/* DM conversation received bubble */
+html.dark-mode ._1xAkv3Rq .Y5C1ukbR {
+	background-color: #303B47 !important;
+}
+
+/* DM conversation received hide white triangle */
+html.dark-mode ._37woGctS:before {
+	visibility: hidden;
 }
 
 /* DM Send button */
