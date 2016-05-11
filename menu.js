@@ -142,6 +142,7 @@ const darwinTpl = [
 		submenu: [
 			{
 				label: 'New Tweet',
+				accelerator: 'Cmd+N',
 				click() {
 					sendAction('new-tweet');
 				}
@@ -254,6 +255,7 @@ const otherTpl = [
 		submenu: [
 			{
 				label: 'New Tweet',
+				accelerator: 'Ctrl+N',
 				click() {
 					sendAction('new-tweet');
 				}
