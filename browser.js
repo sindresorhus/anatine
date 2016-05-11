@@ -197,13 +197,9 @@ function setDarkMode() {
 	document.documentElement.classList.toggle('dark-mode', storage.get('darkMode'));
 }
 
-function toggleDarkMode() {
+ipc.on('toggle-dark-mode', () => {
 	storage.set('darkMode', !storage.get('darkMode'));
 	setDarkMode();
-}
-
-ipc.on('toggle-dark-mode', () => {
-	toggleDarkMode();
 });
 
 if (process.platform === 'darwin') {
