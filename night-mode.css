@@ -1,0 +1,63 @@
+/* background colors */
+html.night-mode,
+.night-mode nav,
+.night-mode ._2qaFoaOS,
+.night-mode ._3o5W64B2,
+.night-mode ._3o5W64B2,
+.night-mode ._2fklWv1X,
+.night-mode .mqmxGGg7 {
+	background-color: #272829;
+}
+
+/* base font color */
+html.night-mode,
+.night-mode nav,
+.night-mode ._2qaFoaOS,
+.night-mode .a--MP-qD,
+.night-mode .a--MP-qD:active,
+.night-mode .a--MP-qD:focus,
+.night-mode .a--MP-qD:hover {
+	color: #eee;
+}
+
+/* Who to follow heading */
+.night-mode ._2LwEUgbO {
+	border-color: #626466;
+}
+
+.night-mode ._3o5W64B2 {
+	background-color: #272829;
+}
+
+/* user "real name" */
+.night-mode ._38kXZCmY {
+	color: #B7D1E4;
+}
+
+/* Embedded media border color */
+.night-mode ._1K1FePxK,
+.night-mode .zLkZvTFz,
+.night-mode ._1unhGaVg {
+	border-color: #626466;
+}
+
+/* Embedded media title */
+.night-mode ._3yLY5rI9 {
+	color: #B7D1E4;
+}
+
+/*  DM conversation received text */
+.night-mode ._1xAkv3Rq._3tixQkQf {
+	color: #272829;
+}
+
+/* DM send message textfield */
+.night-mode ._3gsfT3lC .JFlBIqN4 {
+	background-color: #272829;
+	border: 1px solid #626466;
+}
+
+/* DM Send button */
+.night-mode ._1LQ_VFHl {
+	border-color: #626466;
+}
