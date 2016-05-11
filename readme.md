@@ -1,4 +1,4 @@
-# <img src="static/Icon.png" width="45" align="left">Anatine
+# Anatine <img src="static/Icon.png" width="60">
 
 > Pristine Twitter app
 
