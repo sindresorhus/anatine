@@ -77,6 +77,7 @@ const electron = require('electron');
 const ipc = electron.ipcRenderer;
 const remote = electron.remote;
 const path = remote.require('path');
+const osxAppearance = require('electron-osx-appearance');
 const storage = remote.require('./storage');
 const $ = document.querySelector.bind(document);
 // const $$ = document.querySelectorAll.bind(document);
@@ -192,13 +193,37 @@ function registerShortcuts(username) {
 	// -- //
 }
 
+function setDarkMode() {
+	document.documentElement.classList.toggle('darkMode', storage.get('darkMode'));
+}
+
+function toggleDarkMode() {
+	storage.set('darkMode', !storage.get('darkMode'));
+	setDarkMode();
+}
+
+ipc.on('toggle-dark-mode', () => {
+	toggleDarkMode();
+});
+
+if (process.platform === 'darwin') {
+	osxAppearance.onDarkModeChanged(() => {
+		storage.set('darkMode', osxAppearance.isDarkMode());
+		setDarkMode();
+	});
+}
+
 function init() {
 	// hide navbar profile link
 	$('header a[href$="/account"]').parentNode.style.display = 'none';
 
 	const state = JSON.parse($('.___iso-state___').dataset.state).initialState;
 	const username = state.settings.data.screen_name;
+	if (process.platform === 'darwin') {
+		storage.set('darkMode', osxAppearance.isDarkMode());
+	}
 
+	setDarkMode();
 	registerShortcuts(username);
 }
 

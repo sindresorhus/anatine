@@ -19,6 +19,16 @@ function sendAction(action, data) {
 
 const viewSubmenu = [
 	{
+		label: 'Toggle Dark Mode',
+		accelerator: 'CmdOrCtrl+D',
+		click() {
+			sendAction('toggle-dark-mode');
+		}
+	},
+	{
+		type: 'separator'
+	},
+	{
 		label: 'Reset Text Size',
 		accelerator: 'CmdOrCtrl+0',
 		click() {
