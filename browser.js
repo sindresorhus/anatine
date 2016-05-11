@@ -192,13 +192,27 @@ function registerShortcuts(username) {
 	// -- //
 }
 
+function toggleNightMode(message = false) {
+	$('html').className = '';
+
+	if (message) {
+		$('html').className = 'night-mode';
+	}
+}
+
+ipc.on('toggle-night-mode', (event, message) => {
+	toggleNightMode(message);
+});
+
 function init() {
 	// hide navbar profile link
 	$('header a[href$="/account"]').parentNode.style.display = 'none';
 
 	const state = JSON.parse($('.___iso-state___').dataset.state).initialState;
 	const username = state.settings.data.screen_name;
+	const isNightMode = storage.get('isNightMode');
 
+	toggleNightMode(isNightMode);
 	registerShortcuts(username);
 }
 

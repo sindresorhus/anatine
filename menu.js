@@ -2,10 +2,12 @@
 const os = require('os');
 const path = require('path');
 const electron = require('electron');
+const storage = require('./storage');
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
 const shell = electron.shell;
 const appName = app.getName();
+let isNightMode = storage.get('isNightMode') || false;
 
 function sendAction(action, data) {
 	const win = BrowserWindow.getAllWindows()[0];
@@ -18,6 +20,19 @@ function sendAction(action, data) {
 }
 
 const viewSubmenu = [
+	{
+		label: 'Toggle Night Mode',
+		type: 'checkbox',
+		checked: isNightMode,
+		click() {
+			storage.set('isNightMode', !isNightMode);
+			isNightMode = storage.get('isNightMode');
+			sendAction('toggle-night-mode', isNightMode);
+		}
+	},
+	{
+		type: 'separator'
+	},
 	{
 		label: 'Reset Text Size',
 		accelerator: 'CmdOrCtrl+0',
