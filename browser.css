@@ -63,3 +63,13 @@ img.larrybird {
 	-ms-flex-positive: 1;
 	flex-grow: 1;
 }
+
+/* fix embedded images centering */
+._37JDxKW_ {
+	margin: auto !important;
+}
+
+/* make embedded images full width */
+._1gSEd2sj {
+	width: 100%;
+}
