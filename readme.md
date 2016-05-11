@@ -10,6 +10,32 @@
 </div>
 
 
+## Features
+
+### Background behavior
+
+When closing the window, the app will continue running in the background, in the dock on OS X and the tray on Linux/Windows. Right-click the dock/tray icon and choose `Quit` to completely quit the app. On OS X, click the dock icon to show the window. On Linux, right-click the tray icon and choose `Toggle` to toggle the window. On Windows, click the tray icon to toggle the window.
+
+### Keyboard shortcuts
+
+- New tweet/DM: <kbd>n</kbd>
+- Send tweet/DM: <kbd>Cmd</kbd> <kbd>Enter</kbd> or <kbd>Ctrl</kbd> <kbd>Enter</kbd>
+- Go to Home: <kbd>g</kbd> <kbd>h</kbd>
+- Go to Notifications: <kbd>g</kbd> <kbd>n</kbd>
+- Go to Messages: <kbd>g</kbd> <kbd>m</kbd>
+- Go to Search: <kbd>/</kbd>
+- Go to Profile: <kbd>g</kbd> <kbd>p</kbd>
+- Go to Likes: <kbd>g</kbd> <kbd>l</kbd>
+- Go to previous page: <kbd>Delete</kbd> or <kbd>Backspace</kbd>
+- Next tab: <kbd>Ctrl</kbd> <kbd>Tab</kbd>
+- Previous tab: <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>Tab</kbd>
+- Go to next tweet: <kbd>j</kbd>
+- Go to previous tweet: <kbd>k</kbd>
+- Page down: <kbd>Ctrl</kbd> <kbd>d</kbd>
+- Page up: <kbd>Ctrl</kbd> <kbd>u</kbd>
+- Scroll to top: <kbd>g</kbd> <kbd>g</kbd>
+- Scroll to bottom: <kbd>G</kbd>
+
 
 ## Install
 
@@ -47,31 +73,7 @@ Icon=/full/path/to/folder/Anatine/resources/app/static/Icon.png
 [**Download**](https://github.com/sindresorhus/anatine/releases/latest) and unzip to some location.
 
 
-## Features
-
-### Background behavior
-
-When closing the window, the app will continue running in the background, in the dock on OS X and the tray on Linux/Windows. Right-click the dock/tray icon and choose `Quit` to completely quit the app. On OS X, click the dock icon to show the window. On Linux, right-click the tray icon and choose `Toggle` to toggle the window. On Windows, click the tray icon to toggle the window.
-
-### Keyboard shortcuts
-
-- New tweet/DM: <kbd>n</kbd>
-- Send tweet/DM: <kbd>Cmd</kbd> <kbd>Enter</kbd> or <kbd>Ctrl</kbd> <kbd>Enter</kbd>
-- Go to Home: <kbd>g</kbd> <kbd>h</kbd>
-- Go to Notifications: <kbd>g</kbd> <kbd>n</kbd>
-- Go to Messages: <kbd>g</kbd> <kbd>m</kbd>
-- Go to Search: <kbd>/</kbd>
-- Go to Profile: <kbd>g</kbd> <kbd>p</kbd>
-- Go to Likes: <kbd>g</kbd> <kbd>l</kbd>
-- Go to previous page: <kbd>Delete</kbd> or <kbd>Backspace</kbd>
-- Next tab: <kbd>Ctrl</kbd> <kbd>Tab</kbd>
-- Previous tab: <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>Tab</kbd>
-- Go to next tweet: <kbd>j</kbd>
-- Go to previous tweet: <kbd>k</kbd>
-- Page down: <kbd>Ctrl</kbd> <kbd>d</kbd>
-- Page up: <kbd>Ctrl</kbd> <kbd>u</kbd>
-- Scroll to top: <kbd>g</kbd> <kbd>g</kbd>
-- Scroll to bottom: <kbd>G</kbd>
+---
 
 
 ## Dev
