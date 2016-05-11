@@ -56,3 +56,10 @@ img.larrybird {
 .os-darwin #react-root ._246HcQqT {
 	margin-top: 30px !important;
 }
+
+/* push tweet actions to bottom of tweet container when content is short */
+._2_w-kL22 {
+	-webkit-flex-grow: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+}
