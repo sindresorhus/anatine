@@ -215,11 +215,15 @@ function init() {
 
 	const state = JSON.parse($('.___iso-state___').dataset.state).initialState;
 	const username = state.settings.data.screen_name;
+
+	// link the theme if it was changed while the app was closed
 	if (process.platform === 'darwin') {
 		storage.set('darkMode', osxAppearance.isDarkMode());
 	}
 
+	// activate Dark Mode if it was set before quitting
 	setDarkMode();
+
 	registerShortcuts(username);
 }
 

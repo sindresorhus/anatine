@@ -19,16 +19,6 @@ function sendAction(action, data) {
 
 const viewSubmenu = [
 	{
-		label: 'Toggle Dark Mode',
-		accelerator: 'CmdOrCtrl+D',
-		click() {
-			sendAction('toggle-dark-mode');
-		}
-	},
-	{
-		type: 'separator'
-	},
-	{
 		label: 'Reset Text Size',
 		accelerator: 'CmdOrCtrl+0',
 		click() {
@@ -100,6 +90,16 @@ const darwinTpl = [
 			{
 				label: `About ${appName}`,
 				role: 'about'
+			},
+			{
+				type: 'separator'
+			},
+			{
+				label: 'Toggle Dark Mode',
+				accelerator: 'CmdOrCtrl+D',
+				click() {
+					sendAction('toggle-dark-mode');
+				}
 			},
 			{
 				type: 'separator'
@@ -283,6 +283,16 @@ const otherTpl = [
 				accelerator: 'Ctrl+Shift+Tab',
 				click() {
 					sendAction('previous-tab');
+				}
+			},
+			{
+				type: 'separator'
+			},
+			{
+				label: 'Toggle Dark Mode',
+				accelerator: 'CmdOrCtrl+D',
+				click() {
+					sendAction('toggle-dark-mode');
 				}
 			},
 			{
