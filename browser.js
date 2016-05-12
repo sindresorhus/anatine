@@ -97,6 +97,29 @@ function changeTab(next) {
 	$(`a[href$="${pages[ret]}"]`).click();
 }
 
+function newTweet() {
+	if (window.location.pathname.split('/')[1] === 'messages') {
+		$('a[href$="/home"]').click();
+
+		// // TODO: improve the logic here and instead use an
+		// // interval to detect when the button is available
+		setTimeout(newTweet, 400);
+		return;
+	}
+
+	$('a[href$="/compose/tweet"]').click();
+}
+
+function newDM() {
+	$('a[href$="/messages"]').click();
+
+	// TODO: improve the logic here and instead use an
+	// interval to detect when the button is available
+	setTimeout(() => {
+		$('a[href$="/messages/compose"]').click();
+	}, 1000);
+}
+
 ipc.on('next-tab', () => {
 	changeTab(true);
 });
@@ -107,12 +130,12 @@ ipc.on('previous-tab', () => {
 
 function registerShortcuts(username) {
 	Mousetrap.bind('n', () => {
-		if (window.location.pathname.split('/')[1] === 'messages') {
-			$('a[href$="/messages/compose"]').click();
-		} else {
-			$('a[href$="/compose/tweet"]').click();
-		}
+		newTweet();
+		return false;
+	});
 
+	Mousetrap.bind('m', () => {
+		newDM();
 		return false;
 	});
 
@@ -130,7 +153,6 @@ function registerShortcuts(username) {
 
 	Mousetrap.bind('/', () => {
 		$('a[href$="/search"]').click();
-
 		return false;
 	});
 
@@ -227,9 +249,8 @@ function init() {
 	registerShortcuts(username);
 }
 
-ipc.on('new-tweet', () => {
-	$('a[href$="/compose/tweet"]').click();
-});
+ipc.on('new-tweet', newTweet);
+ipc.on('new-dm', newDM);
 
 ipc.on('log-out', () => {
 	window.location.href = '/logout';

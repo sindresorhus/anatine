@@ -18,7 +18,8 @@ When closing the window, the app will continue running in the background, in the
 
 ### Keyboard shortcuts
 
-- New tweet/DM: <kbd>n</kbd>
+- New tweet: <kbd>n</kbd>
+- New DM: <kbd>m</kbd>
 - Send tweet/DM: <kbd>Cmd</kbd> <kbd>Enter</kbd> or <kbd>Ctrl</kbd> <kbd>Enter</kbd>
 - Go to Home: <kbd>g</kbd> <kbd>h</kbd>
 - Go to Notifications: <kbd>g</kbd> <kbd>n</kbd>

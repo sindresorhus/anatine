@@ -151,10 +151,17 @@ const darwinTpl = [
 		label: 'File',
 		submenu: [
 			{
-				label: 'New Tweet',
+				label: 'New Tweet...',
 				accelerator: 'Cmd+N',
 				click() {
 					sendAction('new-tweet');
+				}
+			},
+			{
+				label: 'New Direct Message...',
+				accelerator: 'Shift+Cmd+N',
+				click() {
+					sendAction('new-dm');
 				}
 			}
 		]
@@ -264,10 +271,17 @@ const otherTpl = [
 		label: 'File',
 		submenu: [
 			{
-				label: 'New Tweet',
+				label: 'New Tweet...',
 				accelerator: 'Ctrl+N',
 				click() {
 					sendAction('new-tweet');
+				}
+			},
+			{
+				label: 'New Direct Message...',
+				accelerator: 'Shift+Ctrl+N',
+				click() {
+					sendAction('new-dm');
 				}
 			},
 			{
