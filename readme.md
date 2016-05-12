@@ -12,6 +12,14 @@
 
 ## Features
 
+### Dark mode
+
+You can toggle dark mode in the `Anatine` menu or with <kbd>Cmd/Ctrl</kbd> <kbd>D</kbd> / <kbd>Ctrl</kbd> <kbd>D</kbd>.
+
+<div align="center">
+	<img src="media/screenshot-dark.png" width="617">
+</div>
+
 ### Background behavior
 
 When closing the window, the app will continue running in the background, in the dock on OS X and the tray on Linux/Windows. Right-click the dock/tray icon and choose `Quit` to completely quit the app. On OS X, click the dock icon to show the window. On Linux, right-click the tray icon and choose `Toggle` to toggle the window. On Windows, click the tray icon to toggle the window.
