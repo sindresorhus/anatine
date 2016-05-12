@@ -240,7 +240,11 @@ function init() {
 
 	// link the theme if it was changed while the app was closed
 	if (process.platform === 'darwin') {
-		storage.set('darkMode', osxAppearance.isDarkMode());
+		const isDarkMode = osxAppearance.isDarkMode();
+
+		if (storage.get('lastSystemTheme') !== isDarkMode) {
+			storage.set('darkMode', isDarkMode);
+		}
 	}
 
 	// activate Dark Mode if it was set before quitting
