@@ -96,7 +96,7 @@ const darwinTpl = [
 			},
 			{
 				label: 'Toggle Dark Mode',
-				accelerator: 'CmdOrCtrl+D',
+				accelerator: 'Cmd+D',
 				click() {
 					sendAction('toggle-dark-mode');
 				}
@@ -164,12 +164,12 @@ const darwinTpl = [
 		submenu: [
 			{
 				label: 'Undo',
-				accelerator: 'CmdOrCtrl+Z',
+				accelerator: 'Cmd+Z',
 				role: 'undo'
 			},
 			{
 				label: 'Redo',
-				accelerator: 'Shift+CmdOrCtrl+Z',
+				accelerator: 'Shift+Cmd+Z',
 				role: 'redo'
 			},
 			{
@@ -177,22 +177,22 @@ const darwinTpl = [
 			},
 			{
 				label: 'Cut',
-				accelerator: 'CmdOrCtrl+X',
+				accelerator: 'Cmd+X',
 				role: 'cut'
 			},
 			{
 				label: 'Copy',
-				accelerator: 'CmdOrCtrl+C',
+				accelerator: 'Cmd+C',
 				role: 'copy'
 			},
 			{
 				label: 'Paste',
-				accelerator: 'CmdOrCtrl+V',
+				accelerator: 'Cmd+V',
 				role: 'paste'
 			},
 			{
 				label: 'Select All',
-				accelerator: 'CmdOrCtrl+A',
+				accelerator: 'Cmd+A',
 				role: 'selectall'
 			}
 		]
@@ -207,12 +207,12 @@ const darwinTpl = [
 		submenu: [
 			{
 				label: 'Minimize',
-				accelerator: 'CmdOrCtrl+M',
+				accelerator: 'Cmd+M',
 				role: 'minimize'
 			},
 			{
 				label: 'Close',
-				accelerator: 'CmdOrCtrl+W',
+				accelerator: 'Cmd+W',
 				role: 'close'
 			},
 			{
@@ -292,7 +292,7 @@ const otherTpl = [
 			},
 			{
 				label: 'Toggle Dark Mode',
-				accelerator: 'CmdOrCtrl+D',
+				accelerator: 'Ctrl+D',
 				click() {
 					sendAction('toggle-dark-mode');
 				}
@@ -319,17 +319,17 @@ const otherTpl = [
 		submenu: [
 			{
 				label: 'Cut',
-				accelerator: 'CmdOrCtrl+X',
+				accelerator: 'Ctrl+X',
 				role: 'cut'
 			},
 			{
 				label: 'Copy',
-				accelerator: 'CmdOrCtrl+C',
+				accelerator: 'Ctrl+C',
 				role: 'copy'
 			},
 			{
 				label: 'Paste',
-				accelerator: 'CmdOrCtrl+V',
+				accelerator: 'Ctrl+V',
 				role: 'paste'
 			}
 		]
