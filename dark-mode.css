@@ -1,3 +1,8 @@
+/* improved text rendering */
+html.dark-mode * {
+	-webkit-font-smoothing: antialiased !important;
+}
+
 /* background colours */
 html.dark-mode,
 /* nav bar */
@@ -127,4 +132,14 @@ html.dark-mode ._1LQ_VFHl {
 /* Trending item title */
 html.dark-mode ._2WpoiLFQ {
 	color: rgba(255, 255, 255, 0.6);
+}
+
+/* new notification highlight in the Notifications tab */
+html.dark-mode ._1O-UMNIz {
+	background-color: rgba(255, 255, 255, 0.04) !important
+}
+
+/* Notification tab activity indicator */
+html.dark-mode ._3CC9EHgm {
+	box-shadow: 0 0 0 .14rem #192633 !important;
 }
