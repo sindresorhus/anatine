@@ -95,6 +95,16 @@ const darwinTpl = [
 				type: 'separator'
 			},
 			{
+				label: 'Toggle Dark Mode',
+				accelerator: 'CmdOrCtrl+D',
+				click() {
+					sendAction('toggle-dark-mode');
+				}
+			},
+			{
+				type: 'separator'
+			},
+			{
 				label: 'Log Out',
 				click() {
 					sendAction('log-out');
@@ -275,6 +285,16 @@ const otherTpl = [
 				accelerator: 'Ctrl+Shift+Tab',
 				click() {
 					sendAction('previous-tab');
+				}
+			},
+			{
+				type: 'separator'
+			},
+			{
+				label: 'Toggle Dark Mode',
+				accelerator: 'CmdOrCtrl+D',
+				click() {
+					sendAction('toggle-dark-mode');
 				}
 			},
 			{
