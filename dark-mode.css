@@ -143,3 +143,12 @@ html.dark-mode ._1O-UMNIz {
 html.dark-mode ._3CC9EHgm {
 	box-shadow: 0 0 0 .14rem #192633 !important;
 }
+
+/* change scrollbar style */
+html:-webkit-any(.os-linux, .os-win32, .dark-mode) ::-webkit-scrollbar {
+    background-color: #2f3b47 !important;
+}
+
+html:-webkit-any(.os-linux, .os-win32, .dark-mode) ::-webkit-scrollbar-thumb {
+	background-color: rgba(255, 255, 255, 0.5) !important;
+}
