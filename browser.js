@@ -308,7 +308,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	zoomInit();
 
 	// enable OS specific styles
-	document.body.classList.add(`os-${process.platform}`);
+	document.documentElement.classList.add(`os-${process.platform}`);
 
 	// TODO: figure out a better way to detect when React is done
 	setTimeout(init, 300);

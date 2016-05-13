@@ -1,16 +1,16 @@
 /* force a scrollbar on Linux and Windows to prevent jumping when changing tabs */
-body.os-linux,
-body.os-win32 {
+html.os-linux,
+html.os-win32 {
 	overflow-y: scroll !important;
 }
 
 /* navbar */
-.os-darwin #react-root header .WBlUyLoP {
+html.os-darwin #react-root header .WBlUyLoP {
 	max-width: 60% !important;
 	width: 60% !important;
 }
-.os-linux #react-root header .WBlUyLoP,
-.os-win32 #react-root header .WBlUyLoP {
+html.os-linux #react-root header .WBlUyLoP,
+html.os-win32 #react-root header .WBlUyLoP {
 	/* wider on Linux and Windows since they don't have the traffic lights */
 	max-width: 80% !important;
 	width: 80% !important;
@@ -23,7 +23,7 @@ body.os-win32 {
 }
 
 /* push the compose modal down */
-.os-darwin #react-root .SaRmWN__._3tixQkQf {
+html.os-darwin #react-root .SaRmWN__._3tixQkQf {
 	top: 40px !important;
 }
 
@@ -53,7 +53,7 @@ img.larrybird {
 }
 
 /* push the image close button down so it's not covered by the OS X traffic lights */
-.os-darwin #react-root ._246HcQqT {
+html.os-darwin #react-root ._246HcQqT {
 	margin-top: 30px !important;
 }
 
