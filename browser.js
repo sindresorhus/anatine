@@ -232,9 +232,6 @@ if (process.platform === 'darwin') {
 }
 
 function init() {
-	// hide navbar profile link
-	$('header a[href$="/account"]').parentNode.style.display = 'none';
-
 	const state = JSON.parse($('.___iso-state___').dataset.state).initialState;
 	const username = state.settings.data.screen_name;
 
