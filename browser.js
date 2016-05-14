@@ -98,27 +98,35 @@ function changeTab(next) {
 	$(`a[href$="${pages[ret]}"]`).click();
 }
 
+// sets interval to wait for selector to be ready before firing callback
+function waitFor(selectorString, callback) {
+	const awaitReact = setInterval(() => {
+		if ($(selectorString)) {
+			callback();
+			clearInterval(awaitReact);
+			return;
+		}
+	}, 100);
+}
+
 function newTweet() {
 	if (window.location.pathname.split('/')[1] === 'messages') {
 		$('a[href$="/home"]').click();
-
-		// // TODO: improve the logic here and instead use an
-		// // interval to detect when the button is available
-		setTimeout(newTweet, 400);
-		return;
 	}
 
-	$('a[href$="/compose/tweet"]').click();
+	// wait for new tweet button to click it
+	waitFor('a[href$="/compose/tweet"]', () => {
+		$('a[href$="/compose/tweet"]').click();
+	});
 }
 
 function newDM() {
 	$('a[href$="/messages"]').click();
 
-	// TODO: improve the logic here and instead use an
-	// interval to detect when the button is available
-	setTimeout(() => {
+	// wait for new message button to click it
+	waitFor('a[href$="/messages/compose"]', () => {
 		$('a[href$="/messages/compose"]').click();
-	}, 1000);
+	});
 }
 
 ipc.on('next-tab', () => {
@@ -308,6 +316,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	// enable OS specific styles
 	document.documentElement.classList.add(`os-${process.platform}`);
 
-	// TODO: figure out a better way to detect when React is done
-	setTimeout(init, 300);
+	// detect when React is ready before firing init
+	waitFor('#react-root header', init);
 });
