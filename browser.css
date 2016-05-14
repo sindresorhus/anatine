@@ -16,6 +16,11 @@ html.os-win32 #react-root header .WBlUyLoP {
 	width: 80% !important;
 }
 
+/* hide profile link in navbar */
+._1dNhc0QK > ._3tixQkQf:last-of-type {
+	display: none;
+}
+
 /* main */
 #react-root main .WBlUyLoP {
 	max-width: 90% !important;
