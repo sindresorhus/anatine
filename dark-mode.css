@@ -62,6 +62,11 @@ html.dark-mode ._3EzK97M9 > span {
 	color: rgba(255, 255, 255, 0.75);
 }
 
+/* tweet links are spans in spans in spans */
+html.dark-mode ._3ZFqFXW8 ._3EzK97M9 > span > span {
+	color: #2AA2EF !important;
+}
+
 /* user "real name" */
 html.dark-mode ._38kXZCmY,
 /* follower counts */
@@ -89,10 +94,11 @@ html.dark-mode ._1jtqWh_6 {
 	background-color: rgba(255, 255, 255, 0.4) !important;
 }
 
-/* embedded media border colour */
+/* embedded media border colour and background */
 html.dark-mode ._1K1FePxK,
 html.dark-mode .zLkZvTFz,
 html.dark-mode ._1unhGaVg {
+	background-color: #2A3D51 !important;
 	border-color: rgba(255, 255, 255, 0.1);
 }
 
