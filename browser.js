@@ -99,14 +99,25 @@ function changeTab(next) {
 }
 
 // sets interval to wait for selector to be ready before firing callback
-function waitFor(selectorString, callback) {
-	const awaitReact = setInterval(() => {
-		if ($(selectorString)) {
-			callback();
-			clearInterval(awaitReact);
+function waitFor(selector) {
+	return new Promise(resolve => {
+		const el = $(selector);
+
+		// shortcut if the element already exists
+		if (el) {
+			resolve(el);
 			return;
 		}
-	}, 100);
+
+		// interval to keep checking for it to come into the DOM
+		const awaitElement = setInterval(() => {
+			const el = $(selector);
+			if (el) {
+				resolve(el);
+				clearInterval(awaitElement);
+			}
+		}, 50);
+	});
 }
 
 function newTweet() {
@@ -115,18 +126,14 @@ function newTweet() {
 	}
 
 	// wait for new tweet button to click it
-	waitFor('a[href$="/compose/tweet"]', () => {
-		$('a[href$="/compose/tweet"]').click();
-	});
+	waitFor('a[href$="/compose/tweet"]').then(element => element.click());
 }
 
 function newDM() {
 	$('a[href$="/messages"]').click();
 
 	// wait for new message button to click it
-	waitFor('a[href$="/messages/compose"]', () => {
-		$('a[href$="/messages/compose"]').click();
-	});
+	waitFor('a[href$="/messages/compose"]').then(element => element.click());
 }
 
 ipc.on('next-tab', () => {
@@ -317,5 +324,5 @@ document.addEventListener('DOMContentLoaded', () => {
 	document.documentElement.classList.add(`os-${process.platform}`);
 
 	// detect when React is ready before firing init
-	waitFor('#react-root header', init);
+	waitFor('#react-root header').then(init);
 });
