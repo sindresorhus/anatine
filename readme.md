@@ -105,6 +105,14 @@ Built with [Electron](http://electron.atom.io).
 - [Caprine](https://github.com/sindresorhus/caprine) - Facebook Messenger app
 
 
+## Created by
+
+- [Sindre Sorhus](https://github.com/sindresorhus)
+- [Paul Molluzzo](https://github.com/paulmolluzzo)
+- [Daniel Pham](https://github.com/danhp)
+- [Contributors…](https://github.com/sindresorhus/anatine/graphs/contributors)
+
+
 ## License
 
 MIT © [Sindre Sorhus](https://sindresorhus.com)
