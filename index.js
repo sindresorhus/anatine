@@ -41,6 +41,7 @@ function createMainWindow() {
 		minWidth: 340,
 		minHeight: 260,
 		titleBarStyle: 'hidden-inset',
+		autoHideMenuBar: true,
 		webPreferences: {
 			preload: path.join(__dirname, 'browser.js'),
 			nodeIntegration: false,
