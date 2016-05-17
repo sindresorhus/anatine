@@ -92,3 +92,8 @@ html:-webkit-any(.os-linux, .os-win32) ::-webkit-scrollbar-thumb {
 	border-radius: 2px;
 	-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
 }
+
+/* hide "your tweet was posted" message */
+._1aaIXoeM.mqmxGGg7._3tixQkQf {
+	display: none !important;
+}
