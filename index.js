@@ -3,6 +3,7 @@ const path = require('path');
 const fs = require('fs');
 const electron = require('electron');
 const app = electron.app;
+const osxAppearance = require('electron-osx-appearance');
 const appMenu = require('./menu');
 const storage = require('./storage');
 const tray = require('./tray');
@@ -103,5 +104,10 @@ app.on('before-quit', () => {
 
 	if (!mainWindow.isFullScreen()) {
 		storage.set('lastWindowState', mainWindow.getBounds());
+	}
+
+	// save the system's theme to determine if it changed on next startup.
+	if (process.platform === 'darwin') {
+		storage.set('lastSystemTheme', osxAppearance.isDarkMode());
 	}
 });
