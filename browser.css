@@ -1,3 +1,8 @@
+/* default color */
+html {
+	background-color: #fff;
+}
+
 /* force a scrollbar on Linux and Windows to prevent jumping when changing tabs */
 html.os-linux,
 html.os-win32 {

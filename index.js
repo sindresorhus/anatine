@@ -42,6 +42,7 @@ function createMainWindow() {
 		minHeight: 260,
 		titleBarStyle: 'hidden-inset',
 		autoHideMenuBar: true,
+		backgroundColor: storage.get('darkMode') ? '#192633 ' : '#fff',
 		webPreferences: {
 			preload: path.join(__dirname, 'browser.js'),
 			nodeIntegration: false,

@@ -244,9 +244,6 @@ function init() {
 	const state = JSON.parse($('.___iso-state___').dataset.state).initialState;
 	const username = state.settings.data.screen_name;
 
-	// activate Dark Mode if it was set before quitting
-	setDarkMode();
-
 	registerShortcuts(username);
 }
 
@@ -314,3 +311,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	// detect when React is ready before firing init
 	waitFor('#react-root header').then(init);
 });
+
+// activate Dark Mode if it was set before quitting
+// don't wait for React to be ready.
+setDarkMode();
