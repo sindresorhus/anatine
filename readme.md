@@ -64,6 +64,8 @@ $ brew update && brew tap caskroom/cask && brew cask install anatine
 
 ### Linux
 
+<img src="media/screenshot-linux.jpg" width="200">
+
 [**Download**](https://github.com/sindresorhus/anatine/releases/latest) and unzip to some location.
 
 To add a shortcut to the app, create a file in `~/.local/share/applications` called `anatine.desktop` with the following contents:
@@ -78,6 +80,8 @@ Icon=/full/path/to/folder/Anatine/resources/app/static/Icon.png
 ```
 
 ### Windows
+
+<img src="media/screenshot-windows.jpg" width="200">
 
 [**Download**](https://github.com/sindresorhus/anatine/releases/latest) and unzip to some location.
 
