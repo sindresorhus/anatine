@@ -74,6 +74,14 @@ function createMainWindow() {
 		e.preventDefault();
 	});
 
+	win.on('enter-full-screen', () => {
+		win.setMaximumSize(2147483647, 2147483647);
+	});
+
+	win.on('leave-full-screen', () => {
+		win.setMaximumSize(850, 2147483647);
+	});
+
 	return win;
 }
 
