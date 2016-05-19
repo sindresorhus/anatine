@@ -221,18 +221,13 @@ document.addEventListener('DOMContentLoaded', () => {
 	// load vendor scripts
 	[
 		path.resolve('vendor/mousetrap.js'),
-		path.resolve('vendor/mousetrap-global-bind.js')
+		path.resolve('vendor/mousetrap-global-bind.js'),
+		path.resolve('vendor/scroll-to-tweet.js')
 	].forEach(src => {
 		const script = document.createElement('script');
 		script.textContent = `require('${src}')`;
 		document.head.appendChild(script);
 	});
-
-	// load scrollToTweet as a module.
-	const scrollToTweetPath = path.resolve('vendor/scroll-to-tweet.js');
-	const script = document.createElement('script');
-	script.textContent = `scrollToTweet = require('${scrollToTweetPath}')`;
-	document.head.appendChild(script);
 
 	zoomInit();
 
