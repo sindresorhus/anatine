@@ -1,11 +1,18 @@
 'use strict';
 const path = require('path');
 const fs = require('fs');
+const concat = require('concat-files');
 const electron = require('electron');
 const app = electron.app;
 const appMenu = require('./menu');
 const storage = require('./storage');
 const tray = require('./tray');
+
+const jsToLoad = [
+	'./vendor/mousetrap.js',
+	'./vendor/mousetrap-global-bind.js',
+	'./browser.js'
+];
 
 require('electron-debug')();
 require('electron-dl')();
@@ -32,6 +39,8 @@ function createMainWindow() {
 	const maxWindowInteger = 2147483647; // used to set max window width/height when toggling fullscreen
 	const maxWidthValue = 850;
 
+	concat(jsToLoad, './dist.js');
+
 	const win = new electron.BrowserWindow({
 		title: app.getName(),
 		show: false,
@@ -47,7 +56,7 @@ function createMainWindow() {
 		autoHideMenuBar: true,
 		backgroundColor: storage.get('darkMode') ? '#192633 ' : '#fff',
 		webPreferences: {
-			preload: path.join(__dirname, 'browser.js'),
+			preload: path.join(__dirname, 'dist.js'),
 			nodeIntegration: false,
 			webSecurity: false,
 			plugins: true
