@@ -48,7 +48,6 @@ function createMainWindow() {
 		backgroundColor: storage.get('darkMode') ? '#192633 ' : '#fff',
 		webPreferences: {
 			preload: path.join(__dirname, 'browser.js'),
-			nodeIntegration: false,
 			webSecurity: false,
 			plugins: true
 		}
