@@ -29,6 +29,7 @@ if (isAlreadyRunning) {
 
 function createMainWindow() {
 	const lastWindowState = storage.get('lastWindowState') || {width: 500, height: 600};
+	const maxWindowInteger = 2147483647; // used to set max window width/height when toggling fullscreen
 
 	const win = new electron.BrowserWindow({
 		title: app.getName(),
@@ -75,11 +76,11 @@ function createMainWindow() {
 	});
 
 	win.on('enter-full-screen', () => {
-		win.setMaximumSize(2147483647, 2147483647);
+		win.setMaximumSize(maxWindowInteger, maxWindowInteger);
 	});
 
 	win.on('leave-full-screen', () => {
-		win.setMaximumSize(850, 2147483647);
+		win.setMaximumSize(850, maxWindowInteger);
 	});
 
 	return win;
