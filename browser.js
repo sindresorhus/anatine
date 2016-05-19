@@ -1,4 +1,5 @@
 'use strict';
+/* globals Mousetrap scrollToTweet */
 const path = require('path');
 const electron = require('electron');
 const ipc = electron.ipcRenderer;
