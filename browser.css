@@ -102,3 +102,23 @@ html:-webkit-any(.os-linux, .os-win32) ::-webkit-scrollbar-thumb {
 ._1aaIXoeM.mqmxGGg7._3tixQkQf {
 	display: none !important;
 }
+
+/* change loading spinner */
+html div._7xnAHtWH._3tixQkQf {
+	background: none;
+	height: 27px;
+	width: 27px;
+	animation: loading 0.8s infinite linear;
+	border: 2px solid #2AA2EF !important;
+	border-right-color: transparent !important;
+	border-radius: 50%;
+}
+
+@-webkit-keyframes loading {
+	0%    { transform: rotate(0deg); }
+	100%  { transform: rotate(360deg); }
+}
+@keyframes loading {
+	0%    { transform: rotate(0deg); }
+	100%  { transform: rotate(360deg); }
+}
