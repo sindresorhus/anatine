@@ -48,7 +48,9 @@ function createMainWindow() {
 		backgroundColor: storage.get('darkMode') ? '#192633 ' : '#fff',
 		webPreferences: {
 			preload: path.join(__dirname, 'browser.js'),
-			nodeIntegration: false,
+			// Removed until preloads accepts more than a single file
+			// Ref: https://github.com/electron/electron/issues/5400
+			// nodeIntegration: false,
 			webSecurity: false,
 			plugins: true
 		}
