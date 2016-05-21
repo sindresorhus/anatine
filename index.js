@@ -47,11 +47,11 @@ function createMainWindow() {
 		titleBarStyle: 'hidden-inset',
 		autoHideMenuBar: true,
 		darkTheme: isDarkMode, // GTK+3
-		backgroundColor: isDarkMode ? '#192633 ' : '#fff',
+		backgroundColor: isDarkMode ? '#192633' : '#fff',
 		webPreferences: {
 			preload: path.join(__dirname, 'browser.js'),
-			// Removed until preloads accepts more than a single file
-			// Ref: https://github.com/electron/electron/issues/5400
+			// removed until preloads accepts more than a single file
+			// ref: https://github.com/electron/electron/issues/5400
 			// nodeIntegration: false,
 			webSecurity: false,
 			plugins: true
