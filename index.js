@@ -29,6 +29,7 @@ if (isAlreadyRunning) {
 
 function createMainWindow() {
 	const lastWindowState = storage.get('lastWindowState') || {width: 500, height: 600};
+	const isDarkMode = storage.get('darkMode');
 	const maxWindowInteger = 2147483647; // used to set max window width/height when toggling fullscreen
 	const maxWidthValue = 850;
 
@@ -45,7 +46,8 @@ function createMainWindow() {
 		minHeight: 260,
 		titleBarStyle: 'hidden-inset',
 		autoHideMenuBar: true,
-		backgroundColor: storage.get('darkMode') ? '#192633 ' : '#fff',
+		darkTheme: isDarkMode, // GTK+3
+		backgroundColor: isDarkMode ? '#192633 ' : '#fff',
 		webPreferences: {
 			preload: path.join(__dirname, 'browser.js'),
 			// Removed until preloads accepts more than a single file
