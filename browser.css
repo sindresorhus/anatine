@@ -3,6 +3,13 @@ html {
 	background-color: #fff;
 }
 
+/* make the navbar the windows's draggable region */
+#react-root header nav,
+/* DM modal navbar */
+#react-root ._3FIA3A1x._3tixQkQf {
+	-webkit-app-region: drag;
+}
+
 /* force a scrollbar on Linux and Windows to prevent jumping when changing tabs */
 html.os-linux,
 html.os-win32 {
