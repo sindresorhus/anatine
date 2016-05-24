@@ -4,8 +4,8 @@ const fs = require('fs');
 const electron = require('electron');
 const app = electron.app;
 const appMenu = require('./menu');
-const storage = require('./storage');
 const tray = require('./tray');
+const config = require('./config');
 
 require('electron-debug')();
 require('electron-dl')();
@@ -28,8 +28,8 @@ if (isAlreadyRunning) {
 }
 
 function createMainWindow() {
-	const lastWindowState = storage.get('lastWindowState') || {width: 500, height: 600};
-	const isDarkMode = storage.get('darkMode');
+	const lastWindowState = config.get('lastWindowState');
+	const isDarkMode = config.get('darkMode');
 	const maxWindowInteger = 2147483647; // used to set max window width/height when toggling fullscreen
 	const maxWidthValue = 850;
 
@@ -115,6 +115,6 @@ app.on('before-quit', () => {
 	isQuitting = true;
 
 	if (!mainWindow.isFullScreen()) {
-		storage.set('lastWindowState', mainWindow.getBounds());
+		config.set('lastWindowState', mainWindow.getBounds());
 	}
 });

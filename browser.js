@@ -5,7 +5,7 @@ require('./vendor/mousetrap-global-bind.js');
 const scrollToTweet = require('./vendor/scroll-to-tweet.js');
 const ipc = electron.ipcRenderer;
 const remote = electron.remote;
-const storage = remote.require('./storage');
+const config = remote.require('./config');
 const $ = document.querySelector.bind(document);
 
 function changeTab(next) {
@@ -158,11 +158,11 @@ function registerShortcuts(username) {
 }
 
 function setDarkMode() {
-	document.documentElement.classList.toggle('dark-mode', storage.get('darkMode'));
+	document.documentElement.classList.toggle('dark-mode', config.get('darkMode'));
 }
 
 ipc.on('toggle-dark-mode', () => {
-	storage.set('darkMode', !storage.get('darkMode'));
+	config.set('darkMode', !config.get('darkMode'));
 	setDarkMode();
 });
 
@@ -185,7 +185,7 @@ ipc.on('zoom-reset', () => {
 });
 
 ipc.on('zoom-in', () => {
-	const zoomFactor = storage.get('zoomFactor') + 0.1;
+	const zoomFactor = config.get('zoomFactor') + 0.1;
 
 	if (zoomFactor < 1.6) {
 		setZoom(zoomFactor);
@@ -193,7 +193,7 @@ ipc.on('zoom-in', () => {
 });
 
 ipc.on('zoom-out', () => {
-	const zoomFactor = storage.get('zoomFactor') - 0.1;
+	const zoomFactor = config.get('zoomFactor') - 0.1;
 
 	if (zoomFactor >= 0.8) {
 		setZoom(zoomFactor);
@@ -203,13 +203,13 @@ ipc.on('zoom-out', () => {
 function setZoom(zoomFactor) {
 	const node = $('#zoomFactor');
 	node.textContent = `body {zoom: ${zoomFactor} !important}`;
-	storage.set('zoomFactor', zoomFactor);
+	config.set('zoomFactor', zoomFactor);
 }
 
 // Inject a global style node to maintain zoom factor after conversation change.
 // Also set the zoom factor if it was set before quitting.
 function zoomInit() {
-	const zoomFactor = storage.get('zoomFactor') || 1.0;
+	const zoomFactor = config.get('zoomFactor') || 1.0;
 	const style = document.createElement('style');
 	style.id = 'zoomFactor';
 
