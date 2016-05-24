@@ -1,12 +1,12 @@
 'use strict';
-/* globals Mousetrap scrollToTweet */
-const path = require('path');
 const electron = require('electron');
+const Mousetrap = require('./vendor/mousetrap.js');
+require('./vendor/mousetrap-global-bind.js');
+const scrollToTweet = require('./vendor/scroll-to-tweet.js');
 const ipc = electron.ipcRenderer;
 const remote = electron.remote;
 const storage = remote.require('./storage');
 const $ = document.querySelector.bind(document);
-// const $$ = document.querySelectorAll.bind(document);
 
 function changeTab(next) {
 	const pages = [
@@ -218,17 +218,6 @@ function zoomInit() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-	// load vendor scripts
-	[
-		path.resolve('vendor/mousetrap.js'),
-		path.resolve('vendor/mousetrap-global-bind.js'),
-		path.resolve('vendor/scroll-to-tweet.js')
-	].forEach(src => {
-		const script = document.createElement('script');
-		script.textContent = `require('${src}')`;
-		document.head.appendChild(script);
-	});
-
 	zoomInit();
 
 	// enable OS specific styles
