@@ -50,10 +50,7 @@ function createMainWindow() {
 		backgroundColor: isDarkMode ? '#192633' : '#fff',
 		webPreferences: {
 			preload: path.join(__dirname, 'browser.js'),
-			// removed until preloads accepts more than a single file
-			// ref: https://github.com/electron/electron/issues/5400
-			// nodeIntegration: false,
-			webSecurity: false,
+			nodeIntegration: false,
 			plugins: true
 		}
 	});

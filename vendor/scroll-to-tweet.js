@@ -54,4 +54,8 @@ Updates should happen there first.
 
 		window.scrollTo(0, scrollTarget);
 	};
+
+	if (typeof module !== 'undefined' && module.exports) {
+		module.exports = window.scrollToTweet;
+	}
 })();
