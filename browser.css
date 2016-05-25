@@ -1,6 +1,7 @@
 /* default color */
 html {
 	background-color: #fff;
+	overflow: hidden;
 }
 
 /* make the navbar the windows's draggable region */
@@ -57,7 +58,8 @@ img.larrybird {
 }
 
 /* make nav bar more narrow */
-#react-root ._2XOZ62oy {
+#react-root ._2XOZ62oy,
+header[role="banner"] {
 	height: 2.6rem !important;
 }
 
@@ -129,4 +131,14 @@ html div._7xnAHtWH._3tixQkQf {
 	100% {
 		transform: rotate(360deg);
 	}
+}
+
+/* only make the main screen scrollable */
+main[role="main"] {
+	overflow: auto;
+	position: absolute;
+	top: 2.6rem;
+	left: 0px;
+	right: 0;
+	bottom: 0;
 }
