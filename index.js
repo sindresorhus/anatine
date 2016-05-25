@@ -59,7 +59,7 @@ function createMainWindow() {
 		win.setSheetOffset(40);
 	}
 
-	win.loadURL('https://mobile.twitter.com/home');
+	win.loadURL('https://mobile.twitter.com/login');
 
 	win.on('close', e => {
 		if (!isQuitting) {
