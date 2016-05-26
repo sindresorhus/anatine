@@ -3,9 +3,8 @@ const electron = require('electron');
 const Mousetrap = require('./vendor/mousetrap.js');
 require('./vendor/mousetrap-global-bind.js');
 const scrollToTweet = require('./vendor/scroll-to-tweet.js');
+const config = require('./config');
 const ipc = electron.ipcRenderer;
-const remote = electron.remote;
-const config = remote.require('./config');
 const $ = document.querySelector.bind(document);
 
 function changeTab(next) {
