@@ -130,3 +130,31 @@ html div._7xnAHtWH._3tixQkQf {
 		transform: rotate(360deg);
 	}
 }
+
+/* background of login page */
+body.sessions-new-page {
+	background: #fff;
+	text-shadow: none !important;
+}
+
+/* links on login page */
+body.sessions-new-page .signup-field-hint,
+body.sessions-new-page .signup-field-hint a:link {
+	color: #2AA2EF;
+	text-shadow: none;
+}
+
+/* login button on log in page */
+body.sessions-new-page .button.signup {
+	background-color: #2AA2EF;
+	background-image: none;
+	border-color: #2AA2EF;
+	color: #fff;
+	text-shadow: none;
+}
+
+/* remove generic outline from login inputs */
+body.sessions-new-page input:focus,
+body.sessions-new-page button:focus {
+	outline: 0;
+}
