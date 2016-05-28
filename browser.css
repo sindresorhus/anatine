@@ -137,8 +137,22 @@ body.sessions-new-page {
 	text-shadow: none !important;
 }
 
-/* hide header on login page */
+/* center header logo on login page */
 body.sessions-new-page .timeline-head {
+	min-width: 100%;
+	background-image: none;
+	background: inherit;
+}
+
+body.sessions-new-page .timeline-head a,
+body.sessions-new-page .timeline-head img.larrybird {
+	display: block;
+	margin: 0 auto;
+	padding: 0 !important;
+}
+
+/* hide header title on login page */
+body.sessions-new-page .timeline-head .title {
 	display: none;
 }
 
