@@ -137,11 +137,33 @@ body.sessions-new-page {
 	text-shadow: none !important;
 }
 
-/* links on login page */
+/* hide header on login page */
+body.sessions-new-page .timeline-head {
+	display: none;
+}
+
+/* add top margin to login form */
+body.sessions-new-page #main_content {
+	min-height: 100%;
+}
+
+/* vertically cetner login form */
+body.sessions-new-page #main_content .signup-body {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	bottom: 50%;
+	left: 0;
+}
+
+body.sessions-new-page #main_content .signup-body form {
+	transform: translateY(-50%);
+}
+
+/* hide links on login page */
 body.sessions-new-page .signup-field-hint,
 body.sessions-new-page .signup-field-hint a:link {
-	color: #2AA2EF;
-	text-shadow: none;
+	display: none;
 }
 
 /* login button on log in page */
@@ -157,4 +179,10 @@ body.sessions-new-page .button.signup {
 body.sessions-new-page input:focus,
 body.sessions-new-page button:focus {
 	outline: 0;
+}
+
+/* hide footer on login page */
+body.sessions-new-page .footer {
+	border: none;
+	display: none;
 }
