@@ -68,12 +68,12 @@ img.larrybird {
 	color: #1da1f2 !important;
 }
 
-/* Remove focus blue on navbar clicked */
+/* Set color for navbar item on :focus (Fixes #62) */
 #react-root ._1GdFzFv1:focus {
 	color: #8899a6;
 }
 
-/* Click on navbar is blue */
+/* Set color for navbar item on :active (Fixes #62) */
 #react-root ._1GdFzFv1:active {
 	color: #1da1f2;
 }
