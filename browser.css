@@ -62,15 +62,18 @@ img.larrybird {
 }
 
 /* remove bottom border from active navbar tab */
+/* Override default color to blue on click active navbar */
 #react-root ._1Qfdd7IP {
 	box-shadow: none !important;
 	color: #1da1f2 !important;
 }
 
+/* Remove focus blue on navbar clicked */
 #react-root ._1GdFzFv1:focus {
 	color: #8899a6;
 }
 
+/* Click on navbar is blue */
 #react-root ._1GdFzFv1:active {
 	color: #1da1f2;
 }
