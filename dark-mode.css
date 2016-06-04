@@ -5,6 +5,8 @@ html.dark-mode * {
 
 /* background colours */
 html.dark-mode,
+/* background of login page */
+html.dark-mode body.sessions-new-page,
 /* nav bar */
 html.dark-mode nav,
 /* input box */
@@ -50,6 +52,8 @@ html.dark-mode ._3so04aC4,
 html.dark-mode ._2LwEUgbO,
 html.dark-mode ._3tixQkQf,
 html.dark-mode .KpW0EccK,
+/* login page log in button */
+body.sessions-new-page .button.signup,
 html.dark-mode .c2-JCY2V ._222QxFjc ._1BmZ-Yeo {
 	border-color: rgba(255, 255, 255, 0.1) !important;
 }
