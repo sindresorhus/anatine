@@ -9,6 +9,7 @@ const config = require('./config');
 
 require('electron-debug')();
 require('electron-dl')();
+require('electron-context-menu')();
 
 let mainWindow;
 let isQuitting = false;
