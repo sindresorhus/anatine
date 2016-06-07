@@ -14,7 +14,7 @@
 
 ### Dark mode
 
-You can toggle dark mode in the `Anatine` menu or with <kbd>Cmd/Ctrl</kbd> <kbd>Shift</kbd> <kbd>D</kbd> / <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>D</kbd>.
+You can toggle dark mode in the `Anatine` menu or with <kbd>Cmd</kbd> <kbd>Shift</kbd> <kbd>D</kbd> / <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>D</kbd>.
 
 <div align="center">
 	<img src="media/screenshot-dark.png" width="617">
