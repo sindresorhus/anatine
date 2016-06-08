@@ -222,10 +222,9 @@ document.addEventListener('DOMContentLoaded', () => {
 	// enable OS specific styles
 	document.documentElement.classList.add(`os-${process.platform}`);
 
+	// activate Dark Mode if it was set before quitting
+	setDarkMode();
+
 	// detect when React is ready before firing init
 	waitFor('#react-root header').then(init);
 });
-
-// activate Dark Mode if it was set before quitting
-// don't wait for React to be ready.
-setDarkMode();
