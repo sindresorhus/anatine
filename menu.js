@@ -196,20 +196,14 @@ const darwinTpl = [
 				accelerator: 'Cmd+V',
 				role: 'paste'
 			},
-			// TODO: https://github.com/electron/electron/issues/5866
 			{
 				label: 'Paste and Match Style',
 				accelerator: 'Shift+Cmd+V',
-				click(el, win) {
-					win.webContents.pasteAndMatchStyle();
-				}
+				role: 'pasteandmatchstyle'
 			},
-			// TODO: https://github.com/electron/electron/issues/5867
 			{
 				label: 'Delete',
-				click(el, win) {
-					win.webContents.delete();
-				}
+				role: 'delete'
 			},
 			{
 				label: 'Select All',
@@ -372,21 +366,15 @@ const otherTpl = [
 				accelerator: 'Ctrl+V',
 				role: 'paste'
 			},
-			// TODO: https://github.com/electron/electron/issues/5866
 			{
 				label: 'Paste and Match Style',
 				accelerator: 'Shift+Ctrl+V',
-				click(el, win) {
-					win.webContents.pasteAndMatchStyle();
-				}
+				role: 'pasteandmatchstyle'
 			},
-			// TODO: https://github.com/electron/electron/issues/5867
 			{
 				label: 'Delete',
 				accelerator: 'Delete',
-				click(el, win) {
-					win.webContents.delete();
-				}
+				role: 'delete'
 			},
 			{
 				type: 'separator'
