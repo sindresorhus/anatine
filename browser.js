@@ -221,7 +221,7 @@ function hidePromotedTweets() {
 		el.closest('div[class*="_222QxFjc"][role="row"]').style.display = 'none';
 	});
 
-	waitFor('._3tixQkQf').then(tweetContainer => {
+	waitFor('._1nQuzuNK._3tixQkQf > ._3tixQkQf').then(tweetContainer => {
 		// hide any immediately seen ads
 		seekAndDestroy();
 
