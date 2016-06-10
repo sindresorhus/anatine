@@ -69,7 +69,9 @@ html.dark-mode ._3EzK97M9 > span {
 }
 
 /* tweet links are spans in spans in spans */
-html.dark-mode ._3ZFqFXW8 ._3EzK97M9 > span > span {
+html.dark-mode ._3ZFqFXW8 ._3EzK97M9 > span > span,
+/* "added to list" list name links */
+html.dark-mode ._3ZDDth2l {
 	color: #2AA2EF !important;
 }
 
