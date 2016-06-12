@@ -238,3 +238,21 @@ body.sessions-new-page .footer {
 	border: none;
 	display: none;
 }
+
+/* tweet links are spans in spans in spans */
+._3ZFqFXW8 ._3EzK97M9 > span > span {
+	color: #2AA2EF !important;
+}
+
+/* make "added to list" list name link consistent color */
+._3ZDDth2l {
+	color: inherit !important;
+}
+
+/* remove inconsistent underline on hovering "added to list" list name links */
+._3ZDDth2l:hover,
+/* remove inconsistent underline on hovering username links */
+._2mYajcSS:hover ._2fjPhluv {
+	color: inherit !important;
+	text-decoration: none !important;
+}

@@ -68,11 +68,6 @@ html.dark-mode ._3EzK97M9 > span {
 	color: rgba(255, 255, 255, 0.75);
 }
 
-/* tweet links are spans in spans in spans */
-html.dark-mode ._3ZFqFXW8 ._3EzK97M9 > span > span {
-	color: #2AA2EF !important;
-}
-
 /* user "real name" */
 html.dark-mode ._38kXZCmY,
 /* follower counts */
