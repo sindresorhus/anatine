@@ -3,6 +3,7 @@ const electron = require('electron');
 const Mousetrap = require('./vendor/mousetrap.js');
 require('./vendor/mousetrap-global-bind.js');
 const scrollToTweet = require('./vendor/scroll-to-tweet.js');
+const hidePromotedTweets = require('./vendor/hide-promoted-tweets.js');
 const config = require('./config');
 const ipc = electron.ipcRenderer;
 const $ = document.querySelector.bind(document);
@@ -23,7 +24,7 @@ function changeTab(next) {
 }
 
 // sets interval to wait for selector to be ready before firing callback
-function waitFor(selector) {
+const waitFor = selector => {
 	return new Promise(resolve => {
 		const el = $(selector);
 
@@ -43,7 +44,7 @@ function waitFor(selector) {
 			}
 		}, 50);
 	});
-}
+};
 
 function newTweet() {
 	if (window.location.pathname.split('/')[1] === 'messages') {
@@ -216,22 +217,6 @@ function zoomInit() {
 	setZoom(zoomFactor);
 }
 
-function hidePromotedTweets() {
-	const seekAndDestroy = () => waitFor('.vjrx_CgX').then(el => {
-		el.closest('div[class*="_222QxFjc"][role="row"]').style.display = 'none';
-	});
-
-	waitFor('._1nQuzuNK._3tixQkQf > ._3tixQkQf').then(tweetContainer => {
-		// hide any immediately seen ads
-		seekAndDestroy();
-
-		// watch tweetContainer to hide new ads that get added
-		new MutationObserver(() => {
-			seekAndDestroy();
-		}).observe(tweetContainer, {attributes: true, childList: true});
-	});
-}
-
 document.addEventListener('DOMContentLoaded', () => {
 	zoomInit();
 
@@ -244,5 +229,5 @@ document.addEventListener('DOMContentLoaded', () => {
 	// detect when React is ready before firing init
 	waitFor('#react-root header').then(init);
 
-	hidePromotedTweets();
+	hidePromotedTweets(waitFor);
 });
