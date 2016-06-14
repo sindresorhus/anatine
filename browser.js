@@ -1,9 +1,9 @@
 'use strict';
 const electron = require('electron');
-const Mousetrap = require('./vendor/mousetrap.js');
-require('./vendor/mousetrap-global-bind.js');
-const scrollToTweet = require('./vendor/scroll-to-tweet.js');
-const hidePromotedTweets = require('./vendor/hide-promoted-tweets.js');
+const Mousetrap = require('./vendor/mousetrap');
+require('./vendor/mousetrap-global-bind');
+const scrollToTweet = require('./vendor/scroll-to-tweet');
+const hidePromotedTweets = require('./vendor/hide-promoted-tweets');
 const config = require('./config');
 const ipc = electron.ipcRenderer;
 const $ = document.querySelector.bind(document);
