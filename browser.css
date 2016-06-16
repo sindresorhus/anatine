@@ -240,7 +240,7 @@ body.sessions-new-page .footer {
 }
 
 /* tweet links are spans in spans in spans */
-._3ZFqFXW8 ._3EzK97M9 > span > span {
+._3ZFqFXW8 ._3EzK97M9[dir=ltr] span {
 	color: #2AA2EF !important;
 }
 
