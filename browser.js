@@ -5,6 +5,7 @@ require('./vendor/mousetrap-global-bind');
 const scrollToTweet = require('./vendor/scroll-to-tweet');
 const hidePromotedTweets = require('./vendor/hide-promoted-tweets');
 const config = require('./config');
+
 const ipc = electron.ipcRenderer;
 const $ = document.querySelector.bind(document);
 
@@ -18,7 +19,7 @@ function changeTab(next) {
 
 	// TODO: these lines can probably be simplified, but I can't think right now
 	const index = pages.indexOf(window.location.pathname) + (next ? 1 : -1);
-	const ret = (index % pages.length + pages.length) % pages.length;
+	const ret = ((index % pages.length) + pages.length) % pages.length;
 
 	$(`a[href$="${pages[ret]}"]`).click();
 }
