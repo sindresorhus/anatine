@@ -29,6 +29,14 @@ html.os-win32 #react-root header .WBlUyLoP {
 	max-width: 800px !important;
 	width: 80% !important;
 }
+#react-root header nav {
+	border-bottom: 1px solid #e1e8ed;
+	background-color: white;
+}
+#react-root header .WBlUyLoP {
+	background-color: transparent;
+	border: none;
+}
 
 /* hide profile link in navbar */
 ._1dNhc0QK > ._3tixQkQf:last-of-type {
