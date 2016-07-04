@@ -1,5 +1,6 @@
 'use strict';
 const electron = require('electron');
+const elementReady = require('element-ready');
 const Mousetrap = require('./vendor/mousetrap');
 require('./vendor/mousetrap-global-bind');
 const scrollToTweet = require('./vendor/scroll-to-tweet');
@@ -24,43 +25,20 @@ function changeTab(next) {
 	$(`a[href$="${pages[ret]}"]`).click();
 }
 
-// sets interval to wait for selector to be ready before firing callback
-const waitFor = selector => {
-	return new Promise(resolve => {
-		const el = $(selector);
-
-		// shortcut if the element already exists
-		if (el) {
-			resolve(el);
-			return;
-		}
-
-		// interval to keep checking for it to come into the DOM
-		const awaitElement = setInterval(() => {
-			const el = $(selector);
-
-			if (el) {
-				resolve(el);
-				clearInterval(awaitElement);
-			}
-		}, 50);
-	});
-};
-
 function newTweet() {
 	if (window.location.pathname.split('/')[1] === 'messages') {
 		$('a[href$="/home"]').click();
 	}
 
 	// wait for new tweet button to click it
-	waitFor('a[href$="/compose/tweet"]').then(element => element.click());
+	elementReady('a[href$="/compose/tweet"]').then(element => element.click());
 }
 
 function newDM() {
 	$('a[href$="/messages"]').click();
 
 	// wait for new message button to click it
-	waitFor('a[href$="/messages/compose"]').then(element => element.click());
+	elementReady('a[href$="/messages/compose"]').then(element => element.click());
 }
 
 ipc.on('next-tab', () => {
@@ -228,7 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	setDarkMode();
 
 	// detect when React is ready before firing init
-	waitFor('#react-root header').then(init);
+	elementReady('#react-root header').then(init);
 
-	hidePromotedTweets(waitFor);
+	hidePromotedTweets(elementReady);
 });
