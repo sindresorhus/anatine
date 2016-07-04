@@ -1,11 +1,3 @@
-/*
-
-This is copied from:
-https://github.com/sindresorhus/refined-twitter/blob/master/extension/scroll-to-tweet.js
-
-Updates should happen there first.
-
-*/
 (() => {
 	'use strict';
 

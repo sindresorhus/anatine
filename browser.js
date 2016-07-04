@@ -3,8 +3,8 @@ const electron = require('electron');
 const elementReady = require('element-ready');
 const Mousetrap = require('./vendor/mousetrap');
 require('./vendor/mousetrap-global-bind');
-const scrollToTweet = require('./vendor/scroll-to-tweet');
-const hidePromotedTweets = require('./vendor/hide-promoted-tweets');
+const scrollToTweet = require('./scroll-to-tweet');
+const hidePromotedTweets = require('./hide-promoted-tweets');
 const config = require('./config');
 
 const ipc = electron.ipcRenderer;
