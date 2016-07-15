@@ -102,6 +102,7 @@ div._1qcaWNh-._1sp7Rzwo._3tixQkQf > img._1MjUlO8b._3uSDkk5s {
 /* push the image close button down so it's not covered by the macOS traffic lights */
 html.os-darwin #react-root ._246HcQqT {
 	margin-top: 30px !important;
+	z-index: 9999;
 }
 
 /* push tweet actions to bottom of tweet container when content is short */
