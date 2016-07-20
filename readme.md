@@ -35,6 +35,7 @@ When closing the window, the app will continue running in the background, in the
 - Go to Search: <kbd>/</kbd>
 - Go to Profile: <kbd>g</kbd> <kbd>p</kbd>
 - Go to Likes: <kbd>g</kbd> <kbd>l</kbd>
+- Go to Lists: <kbd>g</kbd> <kbd>i</kbd>
 - Go to previous page: <kbd>Delete</kbd> or <kbd>Backspace</kbd>
 - Next tab: <kbd>Ctrl</kbd> <kbd>Tab</kbd>
 - Previous tab: <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>Tab</kbd>

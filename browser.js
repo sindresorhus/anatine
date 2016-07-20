@@ -88,6 +88,11 @@ function registerShortcuts(username) {
 		$(`a[href$="/${username}/likes"]`).click();
 	});
 
+	Mousetrap.bind('g i', () => {
+		$('a[href$="/account"]').click();
+		$(`a[href$="/${username}/lists"]`).click();
+	});
+
 	Mousetrap.bindGlobal('esc', () => {
 		const btn = $('button._158OzO7l');
 
