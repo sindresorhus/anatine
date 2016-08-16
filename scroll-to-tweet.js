@@ -24,8 +24,7 @@
 
 		let scrollTarget = 0;
 
-		Array.from(tweets).some((tweet, index) => {
-			// TODO: Replace with for...of loop when Chrome 51 is released https://mobile.twitter.com/chromiumdev/status/717736215433256960
+		for (const [index, tweet] of tweets.entries()) {
 			// if we're scrolling down, grab the offset of the tweet below the nav
 			if (key === 'j') {
 				scrollTarget = totalOffset(tweet.offsetTop);
@@ -41,8 +40,10 @@
 				scrollTarget = totalOffset(tweets[index - 2].offsetTop);
 			}
 
-			return tweetIsBelowNav(tweet.offsetTop);
-		});
+			if (tweetIsBelowNav(tweet.offsetTop)) {
+				break;
+			}
+		};
 
 		window.scrollTo(0, scrollTarget);
 	};
