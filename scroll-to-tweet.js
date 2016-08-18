@@ -6,7 +6,7 @@
 		const tweets = document.querySelectorAll('._222QxFjc[role="row"]');
 		const currentTop = window.scrollY;
 		const bufferTop = 5; // added because somtimes the scrolling is off by a few px
-		const keyCode = event.charCode; // TODO: replace with key when Chrome 51 is out https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key
+		const key = event.key;
 
 		// calculate the height of the navigation/header to use for scrolling
 		const calculatedNavHeight = $('header').clientHeight + ($('header').clientHeight - $('nav').clientHeight);
@@ -24,25 +24,26 @@
 
 		let scrollTarget = 0;
 
-		Array.from(tweets).some((tweet, index) => {
-			// TODO: Replace with for...of loop when Chrome 51 is released https://mobile.twitter.com/chromiumdev/status/717736215433256960
+		for (const [index, tweet] of tweets.entries()) {
 			// if we're scrolling down, grab the offset of the tweet below the nav
-			if (keyCode === 106) {
+			if (key === 'j') {
 				scrollTarget = totalOffset(tweet.offsetTop);
 			}
 
 			// if we're scrolling up and on the first two items scroll to 0
-			if (keyCode === 107 && index <= 1) {
+			if (key === 'k' && index <= 1) {
 				scrollTarget = 0;
 			}
 
 			// if we're scrolling up, grab the offset of the tweet before last
-			if (keyCode === 107 && index > 1) {
+			if (key === 'k' && index > 1) {
 				scrollTarget = totalOffset(tweets[index - 2].offsetTop);
 			}
 
-			return tweetIsBelowNav(tweet.offsetTop);
-		});
+			if (tweetIsBelowNav(tweet.offsetTop)) {
+				break;
+			}
+		}
 
 		window.scrollTo(0, scrollTarget);
 	};

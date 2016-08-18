@@ -18,11 +18,13 @@ function changeTab(next) {
 		'/search'
 	];
 
-	// TODO: these lines can probably be simplified, but I can't think right now
-	const index = pages.indexOf(window.location.pathname) + (next ? 1 : -1);
-	const ret = ((index % pages.length) + pages.length) % pages.length;
+	if (!next) {
+		pages.reverse();
+	}
 
-	$(`a[href$="${pages[ret]}"]`).click();
+	const index = (pages.indexOf(window.location.pathname) + 1) % pages.length;
+
+	$(`a[href$="${pages[index]}"]`).click();
 }
 
 function newTweet() {
