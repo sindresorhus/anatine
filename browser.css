@@ -4,7 +4,7 @@ html {
 }
 
 /* make the navbar the windows's draggable region */
-#react-root .PPN5HVNK._3tixQkQf,
+#react-root header[role="banner"],
 /* DM modal navbar */
 #react-root ._3FIA3A1x._3tixQkQf,
 /* login navbar */
@@ -19,12 +19,12 @@ html.os-win32 {
 }
 
 /* navbar */
-html.os-darwin #react-root header .WBlUyLoP {
+html.os-darwin #react-root header nav > div {
 	max-width: 800px !important;
 	width: 60% !important;
 }
-html.os-linux #react-root header .WBlUyLoP,
-html.os-win32 #react-root header .WBlUyLoP {
+html.os-linux #react-root header nav > div,
+html.os-win32 #react-root header nav > div {
 	/* wider on Linux and Windows since they don't have the traffic lights */
 	max-width: 800px !important;
 	width: 80% !important;
@@ -33,18 +33,18 @@ html.os-win32 #react-root header .WBlUyLoP {
 	border-bottom: 1px solid #e1e8ed;
 	background-color: white;
 }
-#react-root header .WBlUyLoP {
+#react-root header header nav > div {
 	background-color: transparent;
 	border: none;
 }
 
 /* hide profile link in navbar */
-._1dNhc0QK > ._3tixQkQf:last-of-type {
+.ZdM6RWYP > ._2AIt9kbG:last-of-type {
 	display: none;
 }
 
 /* main */
-#react-root main .WBlUyLoP {
+#react-root main > div {
 	max-width: 800px !important;
 	width: 90% !important;
 }
@@ -73,7 +73,7 @@ div._1qcaWNh-._1sp7Rzwo._3tixQkQf > img._1MjUlO8b._3uSDkk5s {
 }
 
 /* make nav bar more narrow */
-#react-root ._2XOZ62oy {
+#react-root ._13hK_2jo {
 	height: 2.6rem !important;
 }
 
