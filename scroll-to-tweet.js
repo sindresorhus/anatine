@@ -3,7 +3,7 @@
 
 	window.scrollToTweet = event => {
 		const $ = document.querySelector.bind(document);
-		const tweets = document.querySelectorAll('._222QxFjc[role="row"]');
+		const tweets = document.querySelectorAll('._2B3_ZDEs[role="row"]');
 		const currentTop = window.scrollY;
 		const bufferTop = 5; // added because somtimes the scrolling is off by a few px
 		const key = event.key;
@@ -12,7 +12,7 @@
 		const calculatedNavHeight = $('header').clientHeight + ($('header').clientHeight - $('nav').clientHeight);
 
 		// this padding has to be applied to factor in the padding that's added to the container
-		const tweetsContainerPadding = Math.ceil(parseInt($('._1nQuzuNK').style.paddingTop.replace('px', ''), 10));
+		const tweetsContainerPadding = Math.ceil(parseInt($('._1lUHnVXE').style.paddingTop.replace('px', ''), 10));
 
 		const offsetToNotShowTweetTopBorder = 2;
 
