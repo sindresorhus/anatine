@@ -9,18 +9,22 @@ html.dark-mode,
 html.dark-mode body.sessions-new-page,
 /* nav bar */
 html.dark-mode nav,
+/* title bar */
+html.dark-mode ._1yjej2X8,
 /* input box */
-html.dark-mode ._2qaFoaOS,
+html.dark-mode ._3ECzUXHz,
 /* spacers in trending page */
 html.dark-mode ._3o5W64B2,
 /* DM background */
-html.dark-mode ._2fklWv1X,
+html.dark-mode ._146dsPAe,
+/* DM header */
+html.dark-mode ._2uy9nnFz,
 /* suggested people */
 html.dark-mode .mqmxGGg7,
 /* user avatars */
 html.dark-mode img._3uSDkk5s,
 /* comment section */
-html.dark-mode ._1R-qbptt {
+html.dark-mode ._34tfJ18O {
 	background: #192633 !important;
 }
 
@@ -47,13 +51,16 @@ html.dark-mode ._3h5wA3M_,
 /* heading border */
 html.dark-mode ._3FIA3A1x,
 /* DM message border */
-html.dark-mode ._2ACoFZzr,
-/* DM compuse top border */
-html.dark-mode ._3so04aC4,
+html.dark-mode .CUNMHrsb,
+/* DM compose top border */
+html.dark-mode ._2uy9nnFz,
 /* element seperators */
-html.dark-mode ._2LwEUgbO,
-html.dark-mode ._3tixQkQf,
-html.dark-mode .KpW0EccK,
+html.dark-mode .ldQL7yes,
+html.dark-mode ._1yjej2X8,
+html.dark-mode ._3ZZxL70j,
+html.dark-mode .nKo5qNPt,
+html.dark-mode ._1jPp6AzZ,
+html.dark-mode .yb8sRFPz,
 /* login page log in button */
 body.sessions-new-page .button.signup,
 html.dark-mode .c2-JCY2V ._222QxFjc ._1BmZ-Yeo {
@@ -64,14 +71,18 @@ html.dark-mode .c2-JCY2V ._222QxFjc ._1BmZ-Yeo {
 html.dark-mode,
 html.dark-mode nav,
 /* embedded media title */
-html.dark-mode ._3yLY5rI9,
+html.dark-mode ._12jQTkIJ,
+/* embedded media text */
+html.dark-mode ._3qXEQLXF,
 /* retweeted tweet body */
-html.dark-mode ._3EzK97M9 > span {
+html.dark-mode ._3EzK97M9 > span,
+/* tweet stat numbers */
+html.dark-mode ._3O8j-ZpD {
 	color: rgba(255, 255, 255, 0.75);
 }
 
 /* user "real name" */
-html.dark-mode ._38kXZCmY,
+html.dark-mode .E3BRg3uP,
 /* follower counts */
 html.dark-mode ._3YZtKRZQ {
 	color: rgba(255, 255, 255, 0.9);
@@ -98,10 +109,9 @@ html.dark-mode ._1jtqWh_6 {
 }
 
 /* embedded media border colour and background */
-html.dark-mode ._1K1FePxK,
-html.dark-mode .zLkZvTFz,
-html.dark-mode ._1unhGaVg,
-html.dark-mode ._3EPQ2p9j {
+html.dark-mode ._1B_Ve7vd,
+html.dark-mode ._1VCZAQjr,
+html.dark-mode ._1t1IjKv5 {
 	background-color: #2A3D51 !important;
 	border-color: rgba(255, 255, 255, 0.1);
 }
