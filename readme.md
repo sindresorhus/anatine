@@ -56,7 +56,7 @@ When closing the window, the app will continue running in the background, in the
 #### [Homebrew Cask](http://caskroom.io)
 
 ```
-$ brew update && brew tap caskroom/cask && brew cask install anatine
+$ brew update && brew cask install anatine
 ```
 
 #### Manually
