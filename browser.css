@@ -265,3 +265,9 @@ body.sessions-new-page .footer {
 	color: inherit !important;
 	text-decoration: none !important;
 }
+
+/* remove 'who to follow' panel on profile page */
+main > div._3xzA16lK /* profile page */ section > div > div > div > div > div /* timeline container */ > div:nth-child(4) /* who to follow */
+{
+	display: none;
+}
