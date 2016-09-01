@@ -95,8 +95,9 @@ function registerShortcuts(username) {
 		$(`a[href$="/${username}/lists"]`).click();
 	});
 
+	// Closes images, DM windows, etc.
 	Mousetrap.bindGlobal('esc', () => {
-		const btn = $('button._158OzO7l');
+		const btn = $('button[aria-label="Close"]');
 
 		if (btn) {
 			btn.click();
