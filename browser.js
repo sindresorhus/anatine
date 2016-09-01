@@ -62,24 +62,24 @@ function registerShortcuts(username) {
 		return false;
 	});
 
-	Mousetrap.bind('g h', () => {
+	Mousetrap.bind(['g h', 'command+1'], () => {
 		$('a[href$="/home"]').click();
 	});
 
-	Mousetrap.bind('g n', () => {
+	Mousetrap.bind(['g n', 'command+2'], () => {
 		$('a[href$="/notifications"]').click();
 	});
 
-	Mousetrap.bind('g m', () => {
+	Mousetrap.bind(['g m', 'command+3'], () => {
 		$('a[href$="/messages"]').click();
 	});
 
-	Mousetrap.bind('/', () => {
+	Mousetrap.bind(['/', 'command+4'], () => {
 		$('a[href$="/search"]').click();
 		return false;
 	});
 
-	Mousetrap.bind('g p', () => {
+	Mousetrap.bind(['g p', 'command+5'], () => {
 		$('a[href$="/account"]').click();
 		$(`a[href$="/${username}"]`).click();
 	});
