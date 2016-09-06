@@ -33,13 +33,14 @@ html.os-win32 #react-root header nav > div {
 	border-bottom: 1px solid #e1e8ed;
 	background-color: white;
 }
-#react-root header header nav > div {
-	background-color: transparent;
+#react-root header header nav > div,
+._3ITjOJ53 {
+	background-color: transparent !important;
 	border: none;
 }
 
 /* hide profile link in navbar */
-.ZdM6RWYP > ._2AIt9kbG:last-of-type {
+header nav ._1CuE6zIr > ._3f2NsD-H:last-of-type {
 	display: none;
 }
 
@@ -270,4 +271,11 @@ body.sessions-new-page .footer {
 main > div._3xzA16lK /* profile page */ section > div > div > div > div > div /* timeline container */ > div:nth-child(4) /* who to follow */
 {
 	display: none;
+}
+
+
+._3ZSf8YGw,
+._3qQLFoYV, ._3qQLFoYV:active, ._3qQLFoYV:focus, ._3qQLFoYV:hover,
+._3ZNFEy6P, ._3ZNFEy6P:active, ._3ZNFEy6P:focus, ._3ZNFEy6P:hover {
+	color: white !important;
 }

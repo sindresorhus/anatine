@@ -14,20 +14,20 @@
     "test": "xo",
     "start": "electron .",
     "build": "npm run build:macos && npm run build:linux && npm run build:windows",
-    "build:macos": "electron-packager . --overwrite --asar --out=dist --ignore='^media$' --prune --platform=darwin --arch=x64 --icon=static/Icon.icns --app-bundle-id=com.sindresorhus.anatine --sign='Developer ID Application: Sindre Sorhus (YG56YK5RN5)' --app-version=$npm_package_version && cd dist/Anatine-darwin-x64 && zip -ryXq9 ../Anatine-osx-${npm_package_version}.zip Anatine.app",
-    "build:linux": "electron-packager . --overwrite --out=dist --ignore='^media$' --prune --platform=linux --arch=x64 --app-bundle-id=com.sindresorhus.anatine --app-version=$npm_package_version && cd dist/Anatine-linux-x64/ && zip -ryq9 ../Anatine-linux-${npm_package_version}.zip *",
-    "build:windows": "electron-packager . --overwrite --asar --out=dist --ignore='^media$' --prune --platform=win32 --arch=ia32 --icon=static/Icon.ico --version-string.ProductName=$npm_package_productName --app-version=$npm_package_version && cd dist/Anatine-win32-ia32 && zip -ryq9 ../Anatine-windows-${npm_package_version}.zip *"
+    "build:macos": "electron-packager . --overwrite --asar --out=dist --ignore='^media$' --platform=darwin --arch=x64 --icon=static/Icon.icns --app-bundle-id=com.sindresorhus.anatine --sign='Developer ID Application: Sindre Sorhus (YG56YK5RN5)' && cd dist/Anatine-darwin-x64 && zip -ryXq9 ../Anatine-osx-${npm_package_version}.zip Anatine.app",
+    "build:linux": "electron-packager . --overwrite --out=dist --ignore='^media$' --platform=linux --arch=x64 --app-bundle-id=com.sindresorhus.anatine && cd dist/Anatine-linux-x64/ && zip -ryq9 ../Anatine-linux-${npm_package_version}.zip *",
+    "build:windows": "electron-packager . --overwrite --asar --out=dist --ignore='^media$' --platform=win32 --arch=ia32 --icon=static/Icon.ico --version-string.ProductName=$npm_package_productName && cd dist/Anatine-win32-ia32 && zip -ryq9 ../Anatine-windows-${npm_package_version}.zip *"
   },
   "dependencies": {
-    "electron-config": "^0.1.1",
-    "electron-context-menu": "^0.1.0",
+    "electron-config": "^0.2.1",
+    "electron-context-menu": "^0.5.0",
     "electron-debug": "^1.0.0",
     "electron-dl": "^1.0.0",
-    "element-ready": "^0.1.0"
+    "element-ready": "^0.2.0"
   },
   "devDependencies": {
-    "electron-packager": "^7.0.0",
-    "electron": "^1.3.3",
+    "electron": "^1.3.5",
+    "electron-packager": "^8.0.0",
     "xo": "*"
   },
   "xo": {
