@@ -2,6 +2,10 @@
 
 > Pristine Twitter app
 
+This app is based the awesome [Mobile Twitter](https://mobile.twitter.com) site, but modifies a lot of things and makes it more usable on the desktop.
+
+**No new features will be accepted as I don't have time to keep up on the constant Mobile Twitter changes.**
+
 <br>
 <div align="center">
 	<a href="https://github.com/sindresorhus/anatine/releases/latest" align="center">
