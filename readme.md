@@ -29,11 +29,11 @@ When closing the window, the app will continue running in the background, in the
 - New tweet: <kbd>n</kbd>
 - New DM: <kbd>m</kbd>
 - Send tweet/DM: <kbd>Cmd</kbd> <kbd>Enter</kbd> or <kbd>Ctrl</kbd> <kbd>Enter</kbd>
-- Go to Home: <kbd>g</kbd> <kbd>h</kbd> or <kbd>Ctrl</kbd> <kbd>1</kbd>
-- Go to Notifications: <kbd>g</kbd> <kbd>n</kbd> or <kbd>Ctrl</kbd> <kbd>2</kbd>
-- Go to Messages: <kbd>g</kbd> <kbd>m</kbd> or <kbd>Ctrl</kbd> <kbd>3</kbd>
-- Go to Search: <kbd>/</kbd> or <kbd>Ctrl</kbd> <kbd>4</kbd>
-- Go to Profile: <kbd>g</kbd> <kbd>p</kbd> or <kbd>Ctrl</kbd> <kbd>5</kbd>
+- Go to Home: <kbd>g</kbd> <kbd>h</kbd> or <kbd>Ctrl</kbd> <kbd>1</kbd>  or <kbd>Cmd</kbd> <kbd>1</kbd>
+- Go to Notifications: <kbd>g</kbd> <kbd>n</kbd> or <kbd>Ctrl</kbd> <kbd>2</kbd>  or <kbd>Cmd</kbd> <kbd>2</kbd>
+- Go to Messages: <kbd>g</kbd> <kbd>m</kbd> or <kbd>Ctrl</kbd> <kbd>3</kbd>  or <kbd>Cmd</kbd> <kbd>3</kbd>
+- Go to Search: <kbd>/</kbd> or <kbd>Ctrl</kbd> <kbd>4</kbd>  or <kbd>Cmd</kbd> <kbd>4</kbd>
+- Go to Profile: <kbd>g</kbd> <kbd>p</kbd> or <kbd>Ctrl</kbd> <kbd>5</kbd>  or <kbd>Cmd</kbd> <kbd>5</kbd>
 - Go to Likes: <kbd>g</kbd> <kbd>l</kbd>
 - Go to Lists: <kbd>g</kbd> <kbd>i</kbd>
 - Go to previous page: <kbd>Delete</kbd> or <kbd>Backspace</kbd>
