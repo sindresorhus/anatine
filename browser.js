@@ -62,24 +62,24 @@ function registerShortcuts(username) {
 		return false;
 	});
 
-	Mousetrap.bind('g h', () => {
+	Mousetrap.bind(['g h', 'mod+1'], () => {
 		$('a[href$="/home"]').click();
 	});
 
-	Mousetrap.bind('g n', () => {
+	Mousetrap.bind(['g n', 'mod+2'], () => {
 		$('a[href$="/notifications"]').click();
 	});
 
-	Mousetrap.bind('g m', () => {
+	Mousetrap.bind(['g m', 'mod+3'], () => {
 		$('a[href$="/messages"]').click();
 	});
 
-	Mousetrap.bind('/', () => {
+	Mousetrap.bind(['/', 'mod+4'], () => {
 		$('a[href$="/search"]').click();
 		return false;
 	});
 
-	Mousetrap.bind('g p', () => {
+	Mousetrap.bind(['g p', 'mod+5'], () => {
 		$('a[href$="/account"]').click();
 		$(`a[href$="/${username}"]`).click();
 	});
@@ -95,8 +95,9 @@ function registerShortcuts(username) {
 		$(`a[href$="/${username}/lists"]`).click();
 	});
 
+	// Closes images, DM windows, etc.
 	Mousetrap.bindGlobal('esc', () => {
-		const btn = $('button._158OzO7l');
+		const btn = $('button.INAWBu0V._1i_BWev4.QwoCevfW.Q1vpCyfl');
 
 		if (btn) {
 			btn.click();
