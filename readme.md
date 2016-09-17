@@ -45,6 +45,8 @@ When closing the window, the app will continue running in the background, in the
 - Previous tab: <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>Tab</kbd>
 - Go to next tweet: <kbd>j</kbd>
 - Go to previous tweet: <kbd>k</kbd>
+- Go to next photo: <kbd>→</kbd>
+- Go to previous photo: <kbd>←</kbd>
 - Page down: <kbd>Ctrl</kbd> <kbd>d</kbd>
 - Page up: <kbd>Ctrl</kbd> <kbd>u</kbd>
 - Scroll to top: <kbd>g</kbd> <kbd>g</kbd>

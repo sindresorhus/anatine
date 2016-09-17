@@ -114,6 +114,22 @@ function registerShortcuts(username) {
 		}
 	});
 
+	Mousetrap.bind('right', () => {
+		const nextBtn = $('button._2p6iBzFu._2UbkmNPH');
+
+		if (nextBtn) {
+			nextBtn.click();
+		}
+	});
+
+	Mousetrap.bind('left', () => {
+		const prevBtn = $('button._2p6iBzFu.lYVIpMQ4');
+
+		if (prevBtn) {
+			prevBtn.click();
+		}
+	});
+
 	Mousetrap.bind('backspace', () => {
 		window.history.back();
 	});
