@@ -171,3 +171,9 @@ html.dark-mode:-webkit-any(.os-linux, .os-win32) ::-webkit-scrollbar {
 html.dark-mode:-webkit-any(.os-linux, .os-win32) ::-webkit-scrollbar-thumb {
 	background-color: rgba(255, 255, 255, 0.5) !important;
 }
+
+html.dark-mode ._3ZSf8YGw,
+html.dark-mode ._3qQLFoYV, ._3qQLFoYV:active, ._3qQLFoYV:focus, ._3qQLFoYV:hover,
+html.dark-mode ._3ZNFEy6P, ._3ZNFEy6P:active, ._3ZNFEy6P:focus, ._3ZNFEy6P:hover {
+	color: white !important;
+}
