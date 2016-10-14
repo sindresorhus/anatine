@@ -2,7 +2,7 @@
 const electron = require('electron');
 const elementReady = require('element-ready');
 const Mousetrap = require('./vendor/mousetrap');
-require('./vendor/mousetrap-global-bind');
+require('./vendor/mousetrap-global-bind'); // eslint-disable-line import/no-unassigned-import
 const scrollToTweet = require('./scroll-to-tweet');
 const hidePromotedTweets = require('./hide-promoted-tweets');
 const config = require('./config');
