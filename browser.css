@@ -19,6 +19,10 @@ html.os-win32 {
 }
 
 /* navbar */
+#react-root header {
+	position: relative;
+	height: 50px;
+}
 #react-root header nav > div {
 	max-width: 800px !important;
 	margin: 0 auto;
@@ -34,6 +38,10 @@ html.os-win32 #react-root header nav > div {
 #react-root header nav {
 	border-bottom: 1px solid #e1e8ed;
 	background-color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 }
 #react-root header header nav > div,
 ._3ITjOJ53 {
