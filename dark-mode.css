@@ -9,6 +9,7 @@ html.dark-mode,
 html.dark-mode body.sessions-new-page,
 /* nav bar */
 html.dark-mode nav,
+html.dark-mode nav > div,
 /* title bar */
 html.dark-mode ._1yjej2X8,
 /* input box */
