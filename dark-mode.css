@@ -25,7 +25,8 @@ html.dark-mode .mqmxGGg7,
 /* user avatars */
 html.dark-mode img._3uSDkk5s,
 /* comment section */
-html.dark-mode ._34tfJ18O {
+html.dark-mode ._34tfJ18O,
+html.dark-mode ._2EmxsDVG {
 	background: #192633 !important;
 }
 
@@ -175,6 +176,34 @@ html.dark-mode:-webkit-any(.os-linux, .os-win32) ::-webkit-scrollbar-thumb {
 
 html.dark-mode ._3ZSf8YGw,
 html.dark-mode ._3qQLFoYV, ._3qQLFoYV:active, ._3qQLFoYV:focus, ._3qQLFoYV:hover,
-html.dark-mode ._3ZNFEy6P, ._3ZNFEy6P:active, ._3ZNFEy6P:focus, ._3ZNFEy6P:hover {
+html.dark-mode ._3ZNFEy6P, ._3ZNFEy6P:active, ._3ZNFEy6P:focus, ._3ZNFEy6P:hover,
+html.dark-mode ._1HXcreMa {
 	color: white !important;
+}
+
+/* change some white borders */
+html.dark-mode ._2OhV6WSs ._1eF_MiFx ._2sSKjr8W,
+html.dark-mode ._3ITjOJ53,
+html.dark-mode #react-root header nav,
+html.dark-mode ._2sUBu-oA,
+html.dark-mode ._24u5-vsm {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+html.dark-mode ._33HzS5QJ,
+html.dark-mode ._3DRCrDG0 {
+	border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+html.dark-mode ._3Ko_vUO1,
+html.dark-mode ._15-p_S0N,
+._1RX2dJ0n {
+	border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* DM */
+html.dark-mode ._1YVNMg8K ._29kyA7wX,
+html.dark-mode ._24u5-vsm {
+	background-color: rgba(0, 0, 0, 0.3) !important;
+}
+html.dark-mode ._1aYYbHbU._3f2NsD-H {
+	margin-left: 40px !important;
 }
