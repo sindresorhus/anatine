@@ -20,13 +20,13 @@
   },
   "dependencies": {
     "electron-config": "^0.2.1",
-    "electron-context-menu": "^0.5.0",
+    "electron-context-menu": "^0.7.0",
     "electron-debug": "^1.0.0",
     "electron-dl": "^1.0.0",
     "element-ready": "^0.2.0"
   },
   "devDependencies": {
-    "electron": "^1.4.0",
+    "electron": "^1.4.7",
     "electron-packager": "^8.0.0",
     "xo": "*"
   },
