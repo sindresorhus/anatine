@@ -19,19 +19,29 @@ html.os-win32 {
 }
 
 /* navbar */
-html.os-darwin #react-root header nav > div {
+#react-root header {
+	position: relative;
+	height: 50px;
+}
+#react-root header nav > div {
 	max-width: 800px !important;
+	margin: 0 auto;
+}
+html.os-darwin #react-root header nav > div {
 	width: 60% !important;
 }
 html.os-linux #react-root header nav > div,
 html.os-win32 #react-root header nav > div {
 	/* wider on Linux and Windows since they don't have the traffic lights */
-	max-width: 800px !important;
 	width: 80% !important;
 }
 #react-root header nav {
 	border-bottom: 1px solid #e1e8ed;
 	background-color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 }
 #react-root header header nav > div,
 ._3ITjOJ53 {
