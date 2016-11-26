@@ -86,6 +86,14 @@ Type=Application
 Icon=/full/path/to/folder/Anatine/resources/app/static/Icon.png
 ```
 
+#### Snap package
+
+```
+$ sudo snap install anatine
+```
+[Read more...](https://github.com/claudioandre/packages/tree/master/anatine)
+
+
 ### Windows
 
 <img src="media/screenshot-windows.jpg" width="200">
