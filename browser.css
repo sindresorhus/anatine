@@ -49,6 +49,11 @@ html.os-win32 #react-root header nav > div {
 	border: none;
 }
 
+/* Remove box shadow from nav (fixes #127) */
+html.os-linux #react-root header div._1d_6kzhv {
+	box-shadow: none;
+}
+
 /* hide profile link in navbar */
 header nav ._1CuE6zIr > ._3f2NsD-H:last-of-type {
 	display: none;
