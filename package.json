@@ -26,7 +26,7 @@
     "element-ready": "^0.2.0"
   },
   "devDependencies": {
-    "electron": "^1.4.7",
+    "electron": "^1.4.10",
     "electron-packager": "^8.0.0",
     "xo": "*"
   },
