@@ -49,7 +49,7 @@ html.os-win32 #react-root header nav > div {
 	border: none;
 }
 
-/* Remove box shadow from nav (fixes #127) */
+/* remove box shadow from nav (fixes #127) */
 html.os-linux #react-root header div._1d_6kzhv {
 	box-shadow: none;
 }
