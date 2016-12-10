@@ -91,6 +91,7 @@ Icon=/full/path/to/folder/Anatine/resources/app/static/Icon.png
 ```
 $ sudo snap install anatine
 ```
+
 [Read more...](https://github.com/claudioandre/packages/tree/master/anatine)
 
 
