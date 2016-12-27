@@ -7,10 +7,10 @@
 		});
 
 		waitFor('._1nQuzuNK._3tixQkQf > ._3tixQkQf').then(tweetContainer => {
-			// hide any immediately seen ads
+			// Hide any immediately seen ads
 			seekAndDestroy();
 
-			// watch tweetContainer to hide new ads that get added
+			// Watch tweetContainer to hide new ads that get added
 			new MutationObserver(() => {
 				seekAndDestroy();
 			}).observe(tweetContainer, {attributes: true, childList: true});

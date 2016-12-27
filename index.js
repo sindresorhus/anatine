@@ -32,7 +32,7 @@ if (isAlreadyRunning) {
 function createMainWindow() {
 	const lastWindowState = config.get('lastWindowState');
 	const isDarkMode = config.get('darkMode');
-	const maxWindowInteger = 2147483647; // used to set max window width/height when toggling fullscreen
+	const maxWindowInteger = 2147483647; // Used to set max window width/height when toggling fullscreen
 	const maxWidthValue = 850;
 
 	const win = new electron.BrowserWindow({

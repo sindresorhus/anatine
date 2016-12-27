@@ -32,14 +32,14 @@ function newTweet() {
 		$('a[href$="/home"]').click();
 	}
 
-	// wait for new tweet button to click it
+	// Wait for new tweet button to click it
 	elementReady('a[href$="/compose/tweet"]').then(element => element.click());
 }
 
 function newDM() {
 	$('a[href$="/messages"]').click();
 
-	// wait for new message button to click it
+	// Wait for new message button to click it
 	elementReady('a[href$="/messages/compose"]').then(element => element.click());
 }
 
@@ -134,7 +134,7 @@ function registerShortcuts(username) {
 		window.history.back();
 	});
 
-	// vim bindings
+	// Vim bindings
 	const pageScrollPctHeight = 0.9;
 	const fromScrollTop = n => document.body.scrollTop + n;
 	const scrollToY = y => window.scrollTo(0, y);
@@ -223,13 +223,13 @@ function zoomInit() {
 document.addEventListener('DOMContentLoaded', () => {
 	zoomInit();
 
-	// enable OS specific styles
+	// Enable OS specific styles
 	document.documentElement.classList.add(`os-${process.platform}`);
 
-	// activate Dark Mode if it was set before quitting
+	// Activate Dark Mode if it was set before quitting
 	setDarkMode();
 
-	// detect when React is ready before firing init
+	// Detect when React is ready before firing init
 	elementReady('#react-root header').then(init);
 
 	hidePromotedTweets(elementReady);

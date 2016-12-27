@@ -1,91 +1,91 @@
-/* improved text rendering */
+/* Improved text rendering */
 html.dark-mode * {
 	-webkit-font-smoothing: antialiased !important;
 }
 
-/* background colours */
+/* Background colours */
 html.dark-mode,
-/* background of login page */
+/* Background of login page */
 html.dark-mode body.sessions-new-page,
-/* nav bar */
+/* Nav bar */
 html.dark-mode nav,
 html.dark-mode nav > div,
-/* title bar */
+/* Title bar */
 html.dark-mode ._1yjej2X8,
-/* input box */
+/* Input box */
 html.dark-mode ._3ECzUXHz,
-/* spacers in trending page */
+/* Spacers in trending page */
 html.dark-mode ._3o5W64B2,
 /* DM background */
 html.dark-mode ._146dsPAe,
 /* DM header */
 html.dark-mode ._2uy9nnFz,
-/* suggested people */
+/* Suggested people */
 html.dark-mode .mqmxGGg7,
-/* user avatars */
+/* User avatars */
 html.dark-mode img._3uSDkk5s,
-/* comment section */
+/* Comment section */
 html.dark-mode ._34tfJ18O,
 html.dark-mode ._2EmxsDVG {
 	background: #192633 !important;
 }
 
-/* search lists */
+/* Search lists */
 html.dark-mode ._10lTeTjh,
-/* unread DM */
+/* Unread DM */
 html.dark-mode .ux8RIzeT {
 	background: rgba(255, 255, 255, 0.04);
 }
 
-/* navbar border */
+/* Navbar border */
 html.dark-mode ._3vk57kRX,
-/* input box border */
+/* Input box border */
 html.dark-mode ._2qaFoaOS,
-/* compose tweet border */
+/* Compose tweet border */
 html.dark-mode ._-99S9zHC,
-/* suggested people */
+/* Suggested people */
 html.dark-mode ._3npsCUvN,
-/* spacer border top */
+/* Spacer border top */
 html.dark-mode ._2-x3RLq2,
-/* retweet count borders */
+/* Retweet count borders */
 html.dark-mode ._1N8xRqVj,
 html.dark-mode ._3h5wA3M_,
-/* heading border */
+/* Heading border */
 html.dark-mode ._3FIA3A1x,
 /* DM message border */
 html.dark-mode .CUNMHrsb,
 /* DM compose top border */
 html.dark-mode ._2uy9nnFz,
-/* element seperators */
+/* Element seperators */
 html.dark-mode .ldQL7yes,
 html.dark-mode ._1yjej2X8,
 html.dark-mode ._3ZZxL70j,
 html.dark-mode .nKo5qNPt,
 html.dark-mode ._1jPp6AzZ,
 html.dark-mode .yb8sRFPz,
-/* login page log in button */
+/* Login page log in button */
 body.sessions-new-page .button.signup,
 html.dark-mode .c2-JCY2V ._222QxFjc ._1BmZ-Yeo {
 	border-color: rgba(255, 255, 255, 0.1) !important;
 }
 
-/* base font colour */
+/* Base font colour */
 html.dark-mode,
 html.dark-mode nav,
-/* embedded media title */
+/* Embedded media title */
 html.dark-mode ._12jQTkIJ,
-/* embedded media text */
+/* Embedded media text */
 html.dark-mode ._3qXEQLXF,
-/* retweeted tweet body */
+/* Retweeted tweet body */
 html.dark-mode ._3EzK97M9 > span,
-/* tweet stat numbers */
+/* Tweet stat numbers */
 html.dark-mode ._3O8j-ZpD {
 	color: rgba(255, 255, 255, 0.75);
 }
 
-/* user "real name" */
+/* User "real name" */
 html.dark-mode .E3BRg3uP,
-/* follower counts */
+/* Follower counts */
 html.dark-mode ._3YZtKRZQ {
 	color: rgba(255, 255, 255, 0.9);
 }
@@ -94,23 +94,23 @@ html.dark-mode ._3YZtKRZQ {
 html.dark-mode ._2qaFoaOS,
 html.dark-mode h1,
 html.dark-mode h2,
-/* input text */
+/* Input text */
 html.dark-mode textarea {
 	color: rgba(255, 255, 255, 0.9) !important;
 }
 
-/* buttons */
+/* Buttons */
 html.dark-mode ._2f-qOhRh {
 	background: transparent;
 	color: rgb(255, 255, 255) !important;
 }
 
-/* reply markers */
+/* Reply markers */
 html.dark-mode ._1jtqWh_6 {
 	background-color: rgba(255, 255, 255, 0.4) !important;
 }
 
-/* embedded media border colour and background */
+/* Embedded media border colour and background */
 html.dark-mode ._1B_Ve7vd,
 html.dark-mode ._1VCZAQjr,
 html.dark-mode ._1t1IjKv5 {
@@ -118,7 +118,7 @@ html.dark-mode ._1t1IjKv5 {
 	border-color: rgba(255, 255, 255, 0.1);
 }
 
-/* poll colour */
+/* Poll colour */
 html.dark-mode ._1BBfOLht {
 	background-color: #0084ff !important;
 }
@@ -156,7 +156,7 @@ html.dark-mode ._2WpoiLFQ {
 	color: rgba(255, 255, 255, 0.6);
 }
 
-/* new notification highlight in the Notifications tab */
+/* New notification highlight in the Notifications tab */
 html.dark-mode ._1O-UMNIz {
 	background-color: rgba(255, 255, 255, 0.04) !important
 }
@@ -166,7 +166,7 @@ html.dark-mode ._3CC9EHgm {
 	box-shadow: 0 0 0 .14rem #192633 !important;
 }
 
-/* change scrollbar style */
+/* Change scrollbar style */
 html.dark-mode:-webkit-any(.os-linux, .os-win32) ::-webkit-scrollbar {
 	background-color: #2f3b47 !important;
 }
@@ -181,7 +181,7 @@ html.dark-mode ._1HXcreMa {
 	color: white !important;
 }
 
-/* change some white borders */
+/* Change some white borders */
 html.dark-mode ._2OhV6WSs ._1eF_MiFx ._2sSKjr8W,
 html.dark-mode ._3ITjOJ53,
 html.dark-mode #react-root header nav,
