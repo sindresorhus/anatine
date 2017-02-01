@@ -1,10 +1,16 @@
+# Deprecated
+
+Me and others put a lot of work into this project to make the Mobile Twitter site great as a desktop app. I've chosen to deprecate it now, as it's impossible to keep up with the Mobile Twitter ever changing React class names. I don't have time to update a bunch of CSS-selectors every other week. Thanks for all the fish.
+
+Happy to let anyone else take over if interested.
+
+---
+
 # Anatine <img src="static/Icon.png" width="60">
 
 > Pristine Twitter app
 
 This app is based the awesome [Mobile Twitter](https://mobile.twitter.com) site, but modifies a lot of things and makes it more usable on the desktop.
-
-**No new features will be accepted as I don't have time to keep up on the constant Mobile Twitter changes.**
 
 <br>
 <div align="center">
