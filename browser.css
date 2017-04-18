@@ -284,3 +284,10 @@ main > div._3xzA16lK /* profile page */ section > div > div > div > div > div /*
 {
 	display: none;
 }
+
+/* push tweet actions to bottom of tweet container when content is short */
+._2_w-kL22 {
+	-webkit-flex-grow: 1;
+	-ms-flex-positive: 1;
+					flex-grow: 1;
+}
